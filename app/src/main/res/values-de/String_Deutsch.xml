@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Allgemein -->
+    <string name="app_name">RANDrink</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="ok">OK</string>
+    <string name="abbrechen">Abbrechen</string>
+    <string name="verstanden">Verstanden</string>
+
+    <!-- Aufgabe.java -->
+    <string name="einzelsschluck">ein Schluck</string>
+    <string name="mehrzahlschluck">Schlücke</string>
+
+    <!-- Menu -->
+    <string name="aufgaben">Aufgaben</string>
+    <string name="einstellungen">Einstellungen</string>
+    <string name="shop">Shop</string>
+    <string name="vieltrinker">Vieltrinker</string>
+
+    <!--MainActivty-->
+    <string name="tp_name">Spielername</string>
+    <string name="zufall">Zufall </string>
+    <string name="hinzufuegen">Hinzufügen </string>
+    <string name="start">Starten</string>
+    <string name="spielernamenstart">Aktuell sind noch keine Spieler hinzugefügt</string>
+    <string name="spielernamen">Es gibt folgende Spieler:  </string>
+    <string name="anzahlshots">Schluckanzahl:</string>
+    <string name="rundenbasis">Rundenbasis</string>
+    <!-- Alerts -->
+    <!-- Kein nickanme eingetragen -->
+    <string name="alter_spielername_title">Spielername leer</string>
+    <string name="alter_spielername_message">Der Spielername ist leer</string>
+    <!-- zu wenig Spieler -->
+    <string name="alter_spieler_title">Es sind zu wenige Spieler!</string>
+    <string name="alter_spieler_message">Es müssen mindestens 2 Spieler sein</string>
+    <!--Toast-->
+    <string name="t_add"> wurde hinzugefügt </string>
+    <string name="add_spieler_fehler"> konnte nicht hinzugefügt werden! Spielername exestiert bereits!</string>
+    <string name="add_spieler_fehler_laenge">konnte nicht hinzugefügt werden. Spielername ist zu lang!</string>
+    <!-- Kategorien Alerts -->
+    <!-- Keine Kategorie ausweählt -->
+    <string name="alter_kategorie_title">Keine Kategorie</string>
+    <string name="alter_kategorie_message">Es wurde keine Kategorie ausgewählt</string>
+    <string name="alert_bewusstes_saufen_title">Vorsicht Alkohol</string>
+    <string name="alert_bewusstes_saufen_message">Der Missbrauch von Alkohol ist gesundheitsschädigend. Wenn ihr fortfahrt bestätigt ihr, dass eventuelle Konsequenzen wissentlich in Kauf genommen werden.</string>
+    <!--REGELN-->
+    <string name="regeln_rundenzahl">Spielende Runden: </string>
+    <!--Hauptspiel -->
+    <string name="naechsterspieler">-></string>
+    <string name="Kopf">Kopf</string>
+    <string name="Zahl">Zahl</string>
+    <string name="entscheidung">Kopf oder Zahl</string>
+    <string name="glueck_kopf">Glück gehabt!</string>
+    <string name="pech_kopf">Pech gehabt! Hebt das Glas!</string>
+    <string name="glueck_zahl">Glück gehabt!</string>
+    <string name="pech_zahl">Pech gehabt! Jetzt wird getrunken!</string>
+    <string name="aufgabevorhanden">Aufgaben: </string>
+    <string name="wartenvid">Münze wird geworfen</string>
+    <string name="switchvideo">Münzwurf an</string>
+
+    <!-- Alerts -->
+    <!-- Spiel beenden -->
+    <string name="alter_spielende_title">Spiel beenden?</string>
+    <string name="alter_spielende_message">Soll das Spiel wirklich beendet werden?</string>
+    <!-- Spieler löschen zu wenig -->
+    <string name="alter_spielerloeschen_title">Es sind zu wenige Spieler</string>
+    <string name="alter_spieleerloeschen_message">Ihr müsst mindestens 2 Spieler sein</string>
+    <!-- Spieler löschen fragen -->
+    <!-- Alert webefrei spielen - Zufall -->
+    <string name="alter_spielerfrage">Welcher Spieler soll gelöscht werden?</string>
+    <string name="alert_werbefrei_title">Werbefrei spielen?</string>
+    <string name="alert_werbefrei_message1">Möchtest du die nächsten </string>
+    <string name="alert_werbefrei_message2"> werbefrei spielen? Dann schau dir dieses kurze Video an.</string>
+    <!-- Halbzeit alert -->
+    <string name="alert_halbzeit_title">Halbzeit</string>
+    <string name="alert_halbzeit_message1">Ihr habt die Hälfte geschafft! Könnt ihr noch weiterspielen? Es sind noch</string>
+    <string name="alert_halbzeit_message2"> Aufgaben.</string>
+
+    <!--Toast-->
+    <string name="t_loschen"> wurde gelöscht </string>
+    <!-- Spieler hinzufügen-->
+    <string name="spieleradd">+</string>
+    <string name="alter_spielerhinzufügen_title">Spieler hinzufügen</string>
+    <string name="alter_spielerhinzufügen_message">Bitte Spielernamen eintragen</string>
+    <!-- Spiel Fertig -->
+    <string name="keineaufgabe_title">Keine Aufgaben mehr</string>
+    <string name="keineaufgabe_message">Es gibt keine Aufgaben mehr! Startet eine neue Runde.</string>
+    <!--Endstatisik -->
+    <string name="alter_statistik_title">Spielstatistik</string>
+    <string name="alter_statistik_message_gesamt">Gesamtrunden: </string>
+    <string name="alter_statistik_message_kopf">Anzahl Kopf: </string>
+    <string name="alter_statistik_message_zahl">Anzahl Zahl: </string>
+    <string name="alter_statistik_message_runden">Anzahl Aufgaben: </string>
+    <string name="alter_statistik_message_durchlauf">Anzahl der Durchläufe: </string>
+    <!--Werbefrei Spielen -->
+    <string name="alert_webefrei_title">Werbefrei spielen</string>
+    <string name="alert_webefrei_message">Möchtest du die nächsten 145 Minuten ohne Werbung spielen</string>
+
+    <!-- AC Credits-->
+    <string name="credits">Credits</string>
+    <string name="ueberuns">Über uns</string>
+    <string name="teile">Teile uns</string>
+    <string name="contactus">Kontaktiere uns</string>
+    <string name="Bug_good">RANDrink Bug/Fehler</string>
+    <string name="share_subject">RANDrink das zufällige Trinkspiel, Spiele es!</string>
+    <string name="share_Text">Hey, du willst Spaß mit deinen Freunden haben und dabei trinken? Dann hol dir das beste Trinkspiel im Playstore</string>
+    <string name="share_auswaehlen">Wähle aus</string>
+
+    <!--Ac Einstellungen -->
+    <string name="fuenfzig">+50</string>
+    <string name="rundenerklärungoben">Schaut euch Werbung an, um</string>
+    <string name="rundenerklärungunten">Runden ohne Unterbrechungen zu spielen.</string>
+    <string name="dark">Darkmode</string>
+    <string name="switch_video_an">Münzwurf an</string>
+    <string name="btn_sprache_speichern">Sprache Speichern</string>
+
+    <!--Alerts -->
+    <string name="alert_title">Sprache ändern</string>
+    <string name="alert_message">"Soll die Sprache geändert werden? Alle Aufgaben werden gelöscht und neu erstellt"</string>
+    <string name="alert_werbung_title">Werbung entfernen</string>
+    <string name="alert_antwort1">Premiumversion: $</string>
+
+
+    <!-- TODO Werbung entfernen-->
+
+    <!--Ac Aufgaben -->
+    <string name="Aufgabeadd">Aufgabe hinzufügen </string>
+    <string name="change">bearbeiten</string>
+    <string name="delete">löschen</string>
+    <string name="record">Datensatz</string>
+    <string name="Kategorie">Kategorie: </string>
+    <string name="alleaufgaben">Alle Aufgaben</string>
+    <string name="aufgabehint">Aufgabe hier eintragen</string>
+    <string name="aufgabeleer1"></string>
+
+    <!-- AC bearbeiten -->
+    <string name="update">Aufgabe updaten</string>
+    <string name="hint_aufgabe">Aufgabe hier eintragen</string>
+    <string name="Aufgabeadden">Aufgabe hinzufügen</string>
+    <string name="aufgabeleer">Aufgabe darf nicht leer sein</string>
+    <string name="aufgabeadded">Aufgabe wurde hinzugefügt</string>
+
+    <!-- Sucht -->
+    <string name="suechtig">Du trinkst oft und viel?</string>
+    <string name="anrufen">Suchtberatung</string>
+    <string name="kenndeinLimit">Kenn dein Limit</string>
+
+    <!-- Sprachen -->
+    <string-array name="sprachen_lang">
+        <item>Deutsch</item>>
+        <item>Englisch</item>
+        <item>Spanisch</item>
+        <item>Französisch</item>
+    </string-array>
+
+    <!-- Aufgaben -->
+    <!--Regeln alle -->
+    <string-array name="regeln">
+        <item>Trinken muss jeder, der es getan hat. Hat es keiner getan, trinkt nur der Spieler, der die Münze geworfen hat. Hier wird in der Gruppe getrunken.</item>
+        <item>Es handelt sich um ein pures Glückspiel. Folgt den Anweisungen. Hier trinkt jeder für sich.</item>
+        <item>Das perfekte Spiel für alle Gamer. Folgt den Anweisungen. Hier wird in der Gruppe getrunken</item>
+        <item>Das perfekte Spiel für alle die sich beim Trinken sportlich beweisen wollen. Folgt den Anweisungen. Hier wird in der Gruppe getrunken.</item>
+    </string-array>
+
+
+    <!-- Kategorie1-->
+    <string name="kategroie1">Ich hab` noch nie </string>
+    <!-- Kategorie 1 Erklärung -->
+    <string name="alter_kategorie_title1">Spielregel: Ich hab` noch nie</string>
+    <string name="alter_kategorie_message1">Trinken muss jeder, der es getan hat. Hat es keiner getan, trinkt nur der Spieler, der die Münze geworfen hat. Hier wird in der Gruppe getrunken.</string>
+    <string name="regeln_habnochnie">Trinken muss jeder, der es getan hat. Hat es keiner getan, trinkt nur der Spieler, der die Münze geworfen hat. Hier wird in der Gruppe getrunken.</string>
+
+    <!-- Aufgaben Kat1 -->
+    <string-array name="kategorie1_aufgaben">
+        <item>Ich hab` noch nie mehr als 24 Stunde ohne Schlaf verbracht. Trinke $ .</item>
+        <item>Ich hab` noch nie meinen Kopf kahl geschoren. Trinke $ .</item>
+        <item>Ich hab` noch nie den Wunsch gehabt, in eine andere Stadt zu ziehen. Trinke $ .</item>
+        <item>Ich hab` noch nie versucht, das Passwort eines Anderen zu erraten. Trinke $ .</item>
+        <item>Ich hab` noch nie etwas geklaut. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Strafzettel bekommen. Trinke $ .</item>
+        <item>Ich hab` noch nie jemandem das Leben gerettet. Trinke $ .</item>
+        <item>Ich hab` noch nie gekifft. Trinke $ .</item>
+        <item>Ich hab` noch nie härtere Drogen konsumiert. Trinke $ .</item>
+        <item>Ich hab` noch nie mein Flugzeug verpasst. Trinke $ .</item>
+        <item>Ich hab` noch nie so heftig gelacht, das ich pinkeln musste. Trinke $ .</item>
+        <item>Ich hab` noch nie den Geburtstag eines Familienangehörigen verpasst. Trinke $ .</item>
+        <item>Ich hab` noch nie im Vollrausch vergessen, wo ich wohne. Trinke $ .</item>
+        <item>Ich hab` noch nie nach dem Feiern einen Blackout gehabt und erinnere mich nur teilweise oder an garnichts mehr. Trinke $ .</item>
+        <item>Ich hab` noch nie so viel Angst bei einem Horrorfil gehabt, dass ich laut geschrien habe. Trinke $ .</item>
+        <item>Ich hab` noch nie einem Autofahrer den Mittelfinger gezeigt. Trinke $ .</item>
+        <item>Ich hab` noch nie Geld gefunden und es behalten. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Zigarre geraucht. Trinke $ .</item>
+        <item>Ich hab` noch nie schlafgewandelt. Trinke $ .</item>
+        <item>Ich hab` noch nie so viel getrunken das ich am nächsten Tag um 16 Uhr immer noch betrunken war. Trinke $ .</item>
+        <item>Ich hab` noch nie den Notruf gewählt. Trinke $ .</item>
+        <item>Ich hab` noch nie ein Auto gefahren mit dem ich nicht hätte fahren dürfen. Trinke $ .</item>
+        <item>Ich hab` noch nie vor 10 Uhr so viel getrunken, dass ich sturz besoffen war. Trinke $ .</item>
+        <item>Ich hab` noch nie etwas anderes als Klopapier benutzt. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Freund/Freundin meines Partners / meiner Partnerin abgrundtief gehasst. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Zahnspange getragen . Trinke $ .</item>
+        <item>Ich hab` noch nie einen besonderen Menschen verloren. Trinke $ .</item>
+        <item>Ich hab` noch nie Kängurufleisch gegessen. Trinke $ .</item>
+        <item>Ich hab` noch nie mehr als eine Woche im Krankenhaus verbracht. Trinke $ .</item>
+        <item>Ich hab` noch nie in einem Kinofilm geschlafen. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Wettbewerb gewonnen. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Rausschmiss in einen Club bekommen. Trinke $ .</item>
+        <item>Ich hab` noch nie den Wunsch gehabt älter zu sein. Trinke $ .</item>
+        <item>Ich hab` noch nie den Wunsch gehabt jünger zu sein. Trinke $ .</item>
+        <item>Ich hab` noch nie ein Fahrrad gestohlen. Trinke $ .</item>
+        <item>Ich hab` noch nie mich selbst in den Schlaf geweint. Trinke $ .</item>
+        <item>Ich hab` noch nie darüber nachgedacht, was nach dem Tod passieren wird. Trinke $ .</item>
+        <item>Ich hab` noch nie ein Fahrzeug eines anderen beschädigt und bin dann einfach weitergefahren. Trinke $ .</item>
+        <item>Ich hab` noch nie überlegt, mir ein Tattoo stechen zu lassen. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Tag im Pyjama verbracht. Trinke $ .</item>
+        <item>Ich hab` noch nie Tierfutter probiert. Trinke $ .</item>
+        <item>Ich hab` noch nie beim Speed-Dating mitgemacht . Trinke $ .</item>
+        <item>Ich hab` noch nie jemandem etwas ekliges in den Briefkasten gesteckt. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Liebesbrief erhalten. Trinke $ .</item>
+        <item>Ich hab` noch nie ein One-Night-Stand gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie im Auto ganz laut die Musik aufgedreht und mitgesungen. Trinke $ .</item>
+        <item>Ich hab` noch nie mit den Eltern über Verhütung gesprochen. Trinke $ .</item>
+        <item>Ich hab` noch nie die Nachrichten meines Partners durchsucht. Trinke $ .</item>
+        <item>Ich hab` noch nie ein Geschenk vergessen. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Mutprobe gemacht. Trinke $ .</item>
+        <item>Ich hab` noch nie gechattet, während ich auf dem Klo saß. Trinke $ .</item>
+        <item>Ich hab` noch nie telefoniert, während ich auf dem Klo saß. Trinke $ .</item>
+        <item>Ich hab` noch nie per SMS/Whatsapp schluss gemacht. Trinke $ .</item>
+        <item>Ich hab` noch nie Rosen geschenkt. Trinke $ .</item>
+        <item>Ich hab` noch nie Rosen geschenkt bekommen. Trinke $ .</item>
+        <item>Ich hab` noch nie jemand über eine Datingseite im Internet kennen gelernt. Trinke $ .</item>
+        <item>Ich hab` noch nie Verhütungsmittel mitgeführt: Nur für den Fall. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Sucht nach etwas entwickelt. Trinke $ .</item>
+        <item>Ich hab` noch nie vor lachen geweint. Trinke $ .</item>
+        <item>Ich hab` noch nie etwas wertvolles kaputt gemacht. Trinke $ .</item>
+        <item>Ich hab` noch nie vergessen meine Pille zu nehmen. Trinke $ .</item>
+        <item>Ich hab` noch nie ein Haustier gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie meine Eltern belogen. Trinke $ .</item>
+        <item>Ich hab` noch nie bei diesem Spiel als einziger getrunken. Trinke $ .</item>
+        <item>Ich hab` noch nie Sex im Freien gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Person geküsst, die hier im Raum ist. Trinke $ .</item>
+        <item>Ich hab` noch nie alleine getrunken. Trinke $ .</item>
+        <item>Ich hab` noch nie Wahrheit oder Pflicht gespielt. Trinke $ .</item>
+        <item>Ich hab` noch nie darauf gewartet, dass jemand anders den ersten Schritt macht. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Autounfall gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie in einem Club mit einer Person rumgemacht. Trinke $ .</item>
+        <item>Ich hab` noch nie verschlafen. Trinke $ .</item>
+        <item>Ich hab` noch nie in der Dusche gesungen. Trinke $ .</item>
+        <item>Ich hab` noch nie nachts nackt in einem See gebadet. Trinke $ .</item>
+        <item>Ich hab` noch nie ins Meer geschissen. Trinke $ .</item>
+        <item>Ich hab` noch nie jemanden nach seiner Nummer gefragt. Trinke $ .</item>
+        <item>Ich hab` noch nie Handschellen beim Sex benutzt. Trinke $ .</item>
+        <item>Ich hab` noch nie etwas aus dem Bauchnabel eines anderen getrunken. Trinke $ .</item>
+        <item>Ich hab` noch nie Sex gehabt, bei dem ich nicht zum Orgasmus gekommen bin. Trinke $ .</item>
+        <item>Ich hab` noch nie Pornohefte bei mir zuhause versteckt. Trinke $ .</item>
+        <item>Ich hab` noch nie jemanden oral befriedigt. Trinke $ .</item>
+        <item>Ich hab` noch nie jemanden beim Sex beobachtet. Trinke $ .</item>
+        <item>Ich hab` noch nie Hilfsmittel bei der Selbstbefriedigung eingesezt. Trinke $ .</item>
+        <item>Ich hab` noch nie Sex an einem außergewöhnlichen Ort gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Sexpuppe in den Händen gehalten. Trinke $ .</item>
+        <item>Ich hab` noch nie versaute Sachen gesagt/geschrieben, um jemanden scharf zu machen. Trinke $ .</item>
+        <item>Ich hab` noch nie Kondom mit Geschmack benutzt. Trinke $ .</item>
+        <item>Ich hab` noch nie meinen Partner mit der Hand stimuliert. Trinke $ .</item>
+        <item>Ich hab` noch nie Sexspielzeug gekauft. Trinke $ .</item>
+        <item>Ich hab` noch nie nach dem Sex Biss- oder Kratzspuren gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie Sperma geschluckt. Trinke $ .</item>
+        <item>Ich hab` noch nie Sex in einem Hotel gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie von BDSM geträumt. Trinke $ .</item>
+        <item>Ich hab` noch nie Sex im Schwimmbad gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie eine Peitsche und ähnliches beim Sex benutzt. Trinke $ .</item>
+        <item>Ich hab` noch nie mehr als 4 Orgasmen innerhalb von 2 Stunden gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie darüber nachgedacht Rollenspiele zu machen. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Porno gesehen. Trinke $ .</item>
+        <item>Ich hab` noch nie einen Dreier gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie Sex während der Periode gehabt. Trinke $ .</item>
+        <item>Ich hab` noch nie Analsex probiert. Trinke $ .</item>
+        <item>Ich hab` noch nie eine erotische Massage gegeben oder erhalten. Trinke $ .</item>
+        <item>Ich hab` noch nie Natursekt ausprobiert. Trinke $ .</item>
+        <item>Ich hab` noch nie Programmiercode geschrieben. Trinke $ .</item>
+    </string-array>
+
+
+    <!-- Kategorie 2 -->
+    <string name="kategorie2">Hardcore</string>
+    <!-- Regeln Kategorie 2 -->
+    <string name="alter_kategorie_title2">Spielregel: Hardcore</string>
+    <string name="alter_kategorie_message2">Es handelt sich um ein pures Glückspiel. Folgt den Anweisungen. Hier trinkt jeder für sich.</string>
+    <string name="regeln_hardcore">Es handelt sich um ein pures Glückspiel. Folgt den Anweisungen. Hier trinkt jeder für sich.</string>
+    <!-- Aufgaben Kategorie 2 -->
+    <string-array name="kategorie2_aufgaben">
+        <item>Trinke $.</item>
+        <item>Exe dein Glas!</item>
+    </string-array>
+
+    <!-- Kategorie 3 -->
+    <string name="kategorie3">Gamer</string>
+    <!-- Regeln Kategorie 3 -->
+    <string name="alter_kategorie_title3">Spielregel: Gamer</string>
+    <string name="alter_kategorie_message3">Das perfekte Spiel für alle Gamer. Folgt den Anweisungen. Hier wird in der Gruppe getrunken</string>
+    <string name="regeln_gamer">Das perfekte Spiel für alle Gamer. Folgt den Anweisungen. Hier wird in der Gruppe getrunken</string>
+    <!-- Aufgaben Kategorie 3 -->
+    <string-array name="kategorie3_aufgaben">
+        <item>Alle PC-Spieler trinken $.</item>
+        <item>Alle Konsolen Spieler trinken $.</item>
+        <item>Alle Xbox Spieler trinken $.</item>
+        <item>Alle PlayStation Spieler trinken $.</item>
+        <item>Jeder der schon mal geragequitet ist, darf $ verteilen.</item>
+        <item>Ehrlicher Spieler! Jeder der schon mal eingesehen hat, das er schlecht gespielt hat, darf $ verteilen.</item>
+        <item>Jeder der sich als Handygamer bezeichnet darf $ trinken.</item>
+        <item>Jeder CS:GO-Fan darf $ verteilen. </item>
+        <item>Jeder der schon mal etwas beim Zocken zerstört hat, darf $ trinken. Auf die zerstörten Gegenstände!</item>
+        <item>Jeder der schon mal GL HF am Anfang einer Runde geschrieben hat, darf $ trinkn.</item>
+        <item>Alle die schonmal E-Sport-Spiele gespielt haben, dürfen $ verteilen.</item>
+        <item>Alle COD-Spieler dürfen $ verteilen.</item>
+        <item>Alle Fortnitespieler müssen $ trinken.</item>
+        <item>Jeder der ein Rennspiel besitzt, darf $ trinken.</item>
+        <item>Alle Nintendo-Switch-Spieler, dürfen $ verteilen.</item>
+        <item>Alle Animal Crossing Liebhaber, müssen 2 x $ trinken.</item>
+        <item>Du Bonze! Verteile $, wenn du ein Lenkrad besitzt.</item>
+        <item>TROLLER! Wenn du schonmal getrollt hast, verteile $. Auf das verlorene Match.</item>
+        <item>Alle Simulator-Spieler trinken $.</item>
+        <item>Alle Rennspieler trinken $.</item>
+        <item>Du Richkid! Wenn du ein Mikrofon besitzt, verteile $.</item>
+        <item>Möchte gern Youtuber! Jeder der schon ein Video hochgeladen hat, darf $.</item>
+        <item>Alle curved Monitor Bestizer dürfen $ verteilen.</item>
+        <item>Stimmt in der Gruppe ab, wer der Hardcoregamer ist. Dieser muss $ trinken.</item>
+        <item>Abstimmung! Der schlechteste Gamer in der Gruppe muss $ trinken, aus mitleid trinkt ihr auch $.</item>
+        <item>Umfrage! Der mit der schlechtesten Hardware trinkt $.</item>
+        <item>Jeder mit einer Custom-Wasserkühlung darf $ verteilen.</item>
+        <item>Jeder der schon so laut geschrien hat, das er am nächsten Tag keine Stimme hatte, darf $ verteilen.</item>
+        <item>Jeder mit einem Nintendo DS darf $ verteilen. </item>
+        <item>RETRO! Jeder mit einer Retrokonsole darf $ verteilen.</item>
+        <item>Fliegen! Jeder der einen Controller geschmissen hat, darf $ trinken. Auf den geflogenen Kameraden!</item>
+        <item>Auf die Muddis! Verteile $, wenn deine Muddi zockt. </item>
+        <item>Trinke, wenn du lost warst.</item>
+        <item>Dauersuchti! Verteile 2 x $, wenn du eine Woche durchgezockt hast (nicht geduscht)</item>
+        <item>Spiel! Sagt in der Reihe rundum ein Ballerspiel auf. Wer keins nennen kann trinkt $. Keine Dopplungen!</item>
+        <item>Spiel! Sagt in der Reihe rundum ein Rennspiel auf. Wer keins nennen kann trinkt $. Keine Dopplungen!</item>
+        <item>Spiel! Sagt in der Reihe rundum ein Strategiespiel auf. Wer keins nennen kann trinkt $. Keine Dopplungen!</item>
+        <item>Spiel! Sagt in der Reihe rundum ein WoW-Klassen auf. Wer keins nennen kann trinkt $. Keine Dopplungen!</item>
+        <item>Spiel! Sagt in der Reihe rundum ein FreePlay-Games auf. Wer keins nennen kann trinkt $. Keine Dopplungen!</item>
+        <item>Spiel! Sagt in der Reihe rundum ein Rennspiel auf. Wer keins nennen kann trinkt $. Keine Dopplungen!</item>
+        <item>Kindheitserinnerung! Sagt in der Reihe rundum Nintendo-Characktere. Wer keinen nennen kann trinkt $. Keine Dopplungen!</item>
+    </string-array>
+
+    <!-- Kategorie 4 -->
+    <string name="kategorie4">Sport</string>
+    <!-- Regeln Kategorie 4 -->
+    <string name="alter_kategorie_title4">Spielregel: Sport</string>
+    <string name="alter_kategorie_message4">Das perfekte Spiel für alle die sich beim Trinken sportlich beweisen wollen. Folgt den Anweisungen. Hier wird in der Gruppe getrunken.</string>
+    <string name="regeln_sport">Das perfekte Spiel für alle die sich beim Trinken sportlich beweisen wollen. Folgt den Anweisungen. Hier wird in der Gruppe getrunken.</string>
+    <!-- Aufgaben Kategorie 4 -->
+    <string-array name="kategorie4_aufgaben">
+        <item>Mache 5 Liegestütze oder trinke $</item>
+        <item>Mache 10 Liegestütze oder trinke $</item>
+        <item>Mache 15 Liegestütze oder trinke $</item>
+        <item>Mache 5 Kniebeugen oder trinke $</item>
+        <item>Mache 10 Kniebeugen oder trinke $</item>
+        <item>Mache 15 Kniebeugen oder trinke $</item>
+        <item>Mache 5 Burpees oder trinke $</item>
+        <item>Mache 10 Burpees oder trinke $</item>
+        <item>Mache 15 Burpees oder trinke $</item>
+        <item>Renne 1 Runde um einen Tisch bevor der Spieler rechts neben dir sein Getränk ausgetrunken hat. Trinke $ falls du es nicht schaffst</item>
+        <item>Renne 1 Runde um einen Tisch bevor der Spieler links neben dir sein Getränk ausgetrunken hat. Trinke $ falls du es nicht schaffst</item>
+        <item>Renne 2 Runde um einen Tisch bevor der Spieler rechts neben dir sein Getränk ausgetrunken hat. Trinke $ falls du es nicht schaffst</item>
+        <item>Renne 2 Runde um einen Tisch bevor der Spieler links neben dir sein Getränk ausgetrunken hat. Trinke $ falls du es nicht schaffst</item>
+        <item>Renne 3 Runde um einen Tisch bevor der Spieler rechts neben dir sein Getränk ausgetrunken hat. Trinke $ falls du es nicht schaffst</item>
+        <item>Renne 3 Runde um einen Tisch bevor der Spieler links neben dir sein Getränk ausgetrunken hat. Trinke $ falls du es nicht schaffst</item>
+        <item>Mache mit einer Person deiner Wahl Armdrücken. Der Verlierer muss trinken $</item>
+        <item>Halte eine Plank Position für 15 Sekunden oder trinke $</item>
+        <item>Halte eine Plank Position für 30 Sekunden oder trinke $</item>
+        <item>Halte eine Plank Position für 45 Sekunden oder trinke $</item>
+        <item>Mache ein Handstand oder trinke $</item>
+        <item>Springt alle aus dem Stand so weit wie ihr könnt, der Verlierer muss trinken $</item>
+        <item>Renne mit einer Person deiner Wahl um die Wette, der Verlierer muss trinken $</item>
+        <item>Renne mit der Person zu deiner rechten um die Wette, der Verlierer muss trinken $</item>
+        <item>Renne mit der Person zu deiner linken um die Wette, der Verlierer muss trinken $</item>
+        <item>Mache eine Brücke oder trinke $</item>
+        <item>Mache 10 Sit-Ups oder trinke $</item>
+        <item>Mache 15 Sit-Ups oder trinke $</item>
+        <item>Mache 20 Sit-Ups oder trinke $</item>
+        <item>Mache 5 tiefe Kniebeugen oder trinke $</item>
+        <item>Mache 10 tiefe Kniebeugen oder trinke $</item>
+        <item>Mache 15 tiefe Kniebeugen oder trinke $</item>
+        <item>Mache 15 Hampelmänner oder trinke $</item>
+        <item>Mache 20 Hampelmänner oder trinke $</item>
+        <item>Mache 25 Hampelmänner oder trinke $</item>
+        <item>Lehn dich 10 Sekunden mit dem Rücken an die Wand, sodass deine Beine einen 90 Grad Winkel bilden oder trinke $</item>
+        <item>Lehn dich 20 Sekunden mit dem Rücken an die Wand, sodass deine Beine einen 90 Grad Winkel bilden oder trinke $</item>
+        <item>Lehn dich 30 Sekunden mit dem Rücken an die Wand, sodass deine Beine einen 90 Grad Winkel bilden oder trinke $</item>
+        <item>Mache 10 Ausfallschritte oder trinke $</item>
+        <item>Mache 15 Ausfallschritte oder trinke $</item>
+        <item>Mache 20 Ausfallschritte oder trinke $</item>
+        <item>Mache 5 Klimmzüge oder trinke $ Falls es nicht möglich ist, mache Armdrücken mit einer Person deiner Wahl. Der Verlierer muss trinken $</item>
+        <item>Mache 10 Klimmzüge oder trinke $ Falls es nicht möglich ist, mache Armdrücken mit einer Person deiner Wahl. Der Verlierer muss trinken $</item>
+        <item>Mache 15 Klimmzüge oder trinke $ Falls es nicht möglich ist, mache Armdrücken mit einer Person deiner Wahl. Der Verlierer muss trinken $</item>
+        <item>Mache 5 Liegestütze und klatsche dabei in die Hände oder trinke $</item>
+        <item>Mache 10 Liegestütze und klatsche dabei in die Hände oder trinke $</item>
+        <item>Mache 15 Liegestütze und klatsche dabei in die Hände oder trinke $</item>
+        <item>Überlege dir eine realistische Sportübung für einen Mitspieler deiner Wahl. Wenn er es schafft musst du trinken $ wenn nicht er</item>
+        <item>Überlege dir eine realistische Sportübung für den Mitspieler zu deiner rechten. Wenn er es schafft musst du trinken $ wenn nicht er</item>
+        <item>Überlege dir eine realistische Sportübung für den Mitspieler zu deiner linken. Wenn er es schafft musst du trinken $ wenn nicht er</item>
+        <item>Lege dich auf den Bauch und hebe Arme und Beine für 10 Sekunden oder trinke $</item>
+        <item>Lege dich auf den Bauch und hebe Arme und Beine für 15 Sekunden oder trinke $</item>
+        <item>Lege dich auf den Bauch und hebe Arme und Beine für 20 Sekunden oder trinke $ </item>
+        <item>Mache einen L-Sit oder trinke $</item>
+        <item>Halte eine seitlichen Plank für 10 Sekunden oder trinke $</item>
+        <item>Halte eine seitlichen Plank für 15 Sekunden oder trinke $</item>
+        <item>Halte eine seitlichen Plank für 20 Sekunden oder trinke $</item>
+        <item>Mache ein einarmigen Liegestütz oder trinke $</item>
+        <item>Mache eine Kniebeuge auf einem Bein oder trinke $</item>
+        <item>Mache 5 Diamant Liegestütz oder trinke $</item>
+        <item>Mache 10 Diamant Liegestütz oder trinke $</item>
+        <item>Mache 15 Diamant Liegestütz oder trinke $</item>
+        <item>Mache 5 Liegestütz mit den Armen soweit auseinander wie möglich oder trinke $</item>
+        <item>Mache 10 Liegestütz mit den Armen soweit auseinander wie möglich oder trinke $</item>
+        <item>Mache 15 Liegestütz mit den Armen soweit auseinander wie möglich oder trinke $</item>
+        <item>Suche einen beliebigen Mitspieler setzt euch auf den Boden, lehnt euch nach hinten und hebt Beine und Arme vom Boden. Wer länger die Position halten kann gewinnt der Verliere muss trinken $</item>
+        <item>Überlege dir eine Übung die du gegen einen Mitspieler machst der Verlieren muss trinken $</item>
+        <item>Springe so hoch wie du kannst oder trinke $</item>
+        <item>Springt alle so hoch wie ihr könnt, die Person die am niedrigsten gesprungen ist muss trinken $</item>
+        <item>Stell dich für 10 Sekunden auf ein Bein oder trinke $</item>
+        <item>Stell dich für 15 Sekunden auf ein Bein oder trinke $</item>
+        <item>Stell dich für 20 Sekunden auf ein Bein oder trinke $</item>
+        <item>Suche dir ein Mitspieler deiner Wahl. Versucht euch gegenseitig weg zu drücken, der Verlierer muss trinken $</item>
+        <item>Nimm den Spieler zu deiner rechten und versucht euch gegenseitig weg zu drücken, der Verlierer muss trinken $</item>
+        <item>Nimm den Spieler zu deiner linken und versucht euch gegenseitig weg zu drücken, der Verlierer muss trinken $</item>
+    </string-array>
+</resources>

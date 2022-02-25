@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#80CDAC02</color>    //balken bei Saufio
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#CA7104</color>
+
+    <color name="colorPrimaryNight">#323131</color>    //balken bei Saufio #80140E3D
+    <color name="colorPrimaryDarkNight">#000</color>
+    <color name="colorAccentNight">#8F7A85</color>
+
+    <color name="mainText">#000000</color>
+    <color name="mainTextNight">#DFDBDB</color>
+
+
+</resources>

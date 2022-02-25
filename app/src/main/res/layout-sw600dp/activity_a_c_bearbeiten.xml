@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    tools:context="schulzUndWitzelGbR.App.saufio.AC_bearbeiten">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/background" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="369dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/pixil_button_main"
+        android:fontFamily="@font/pixel_art"
+        android:gravity="center"
+        android:hint="@string/Aufgabeadden"
+        android:onClick="aufgabe_update_add"
+        android:padding="15dp"
+        android:soundEffectsEnabled="false"
+        android:text="@string/Aufgabeadd"
+        android:textColor="?attr/primaryTitleColor"
+        android:textColorHint="?attr/primaryTitleColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Aufgabe"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_Aufgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="70dp"
+        android:ems="15"
+        android:gravity="start|top"
+        android:hint="@string/hint_aufgabe"
+        android:inputType="textMultiLine"
+        android:textColor="?attr/primaryTitleColor"
+        android:textColorHint="?attr/primaryTitleColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#549C9B9B"
+        android:textColor="?attr/primaryTitleColor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
