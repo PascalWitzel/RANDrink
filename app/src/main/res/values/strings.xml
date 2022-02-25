@@ -149,9 +149,6 @@
     <!-- Sprachen -->
     <string-array name="sprachen_lang">
         <item>Deutsch</item>>
-        <item>Englisch</item>
-        <item>Spanisch</item>
-        <item>Französisch</item>
     </string-array>
 
     <!-- Aufgaben -->

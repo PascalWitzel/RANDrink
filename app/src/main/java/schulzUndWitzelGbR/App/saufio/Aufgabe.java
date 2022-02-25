@@ -117,9 +117,6 @@ public class Aufgabe extends AppCompatActivity{
         }
 
 
-        a.setKategorie("TEST kaufen");
-        a.setAufgabe("aufgabe 1 ");d.addAufgabe(a);
-        a.setAufgabe("aufgabe 2");d.addAufgabe(a);
 
 
 

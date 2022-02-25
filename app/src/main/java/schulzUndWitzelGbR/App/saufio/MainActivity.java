@@ -139,9 +139,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             Aufgabe.getAddGameaufgabe(this);
             Intent i = new Intent(MainActivity.this, MainActivity.class);
         }
-        //todo: spieler löschen - Testdaten
-        Spieler.add("ICH BIN DER TEST");
-        Spieler.add("ICH 2TER");
+
         kategorie=db.getKategorien().toArray(new String[0]);
         Allgemein.checkInternetPermission(this);
         btn_start=(Button)findViewById(R.id.btn_zumSpiel);
