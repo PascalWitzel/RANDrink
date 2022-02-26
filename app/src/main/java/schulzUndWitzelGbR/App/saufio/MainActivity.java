@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             case R.id.Aufgabe:
                 startActivity(new Intent(MainActivity.this, ac_aufgaben.class));
                 return true;
-            case R.id.Shop:
-                startActivity(new Intent(MainActivity.this, Shop.class));
+            //case R.id.Shop:
+              //  startActivity(new Intent(MainActivity.this, Shop.class));
             case R.id.Sucht:
                 startActivity(new Intent(MainActivity.this, sucht.class));
             default:

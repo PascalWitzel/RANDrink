@@ -6,9 +6,9 @@
         android:title="@string/einstellungen" />
     <item android:id="@+id/Credits"
         android:title="@string/credits" />
-    <item android:id="@+id/Shop"
+   <!-- <item android:id="@+id/Shop"
         android:title="@string/shop">
-    </item>
+    </item> -->
     <item android:id="@+id/Sucht"
         android:title="@string/vieltrinker">
     </item>
