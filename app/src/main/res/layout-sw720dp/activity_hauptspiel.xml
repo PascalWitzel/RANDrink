@@ -81,9 +81,10 @@
 
     <VideoView
         android:id="@+id/videoBB"
-        android:layout_width="600dp"
-        android:layout_height="450dp"
+        android:layout_width="616dp"
+        android:layout_height="373dp"
         android:layout_marginTop="80dp"
+        android:layout_marginBottom="32dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/tv_aufgabe"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,17 +122,18 @@
 
     <TextView
         android:id="@+id/tv_aufgabe"
-        android:layout_width="570dp"
-        android:layout_height="245dp"
+        android:layout_width="554dp"
+        android:layout_height="194dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:autoSizeMaxTextSize="150sp"
         android:autoSizeMinTextSize="12sp"
-        android:autoSizeTextType="uniform"
         android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
         android:text="TextView"
         android:textAllCaps="false"
         android:textColor="?attr/primaryTitleColor"
@@ -308,9 +310,10 @@
 
     <ImageView
         android:id="@+id/video_ende"
-        android:layout_width="600dp"
-        android:layout_height="450dp"
+        android:layout_width="610dp"
+        android:layout_height="340dp"
         android:layout_marginTop="80dp"
+        android:layout_marginBottom="32dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/tv_aufgabe"
         app:layout_constraintEnd_toEndOf="parent"

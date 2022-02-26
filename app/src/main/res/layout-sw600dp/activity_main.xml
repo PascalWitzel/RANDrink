@@ -26,9 +26,9 @@
         android:id="@+id/cb_kinder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:minHeight="48dp"
@@ -40,13 +40,47 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/pixel_art"
+        android:text="@string/anzahlshots"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?attr/primaryTitleColor"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numberPicker"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler" />
+
+    <EditText
+        android:id="@+id/etn_sucht"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <NumberPicker
         android:id="@+id/numberPicker"
         android:layout_width="100dp"
         android:layout_height="130dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="280dp"
-        android:layout_marginRight="280dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
         android:scrollbarThumbVertical="?attr/primaryTitleColor"
         android:textSize="24sp"
@@ -58,6 +92,8 @@
         android:layout_width="188dp"
         android:layout_height="51dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:background="@drawable/pixil_button_main"
         android:fontFamily="@font/pixel_art"
         android:onClick="btn_add"
@@ -76,8 +112,8 @@
         android:id="@+id/tp_spieler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:fontFamily="@font/pixel_art"
@@ -129,33 +165,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:fontFamily="@font/pixel_art"
-        android:text="@string/anzahlshots"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="?attr/primaryTitleColor"
-        android:textColorHint="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/numberPicker"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler" />
-
     <ListView
         android:id="@+id/lv_kategorie"
-        android:layout_width="800dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="673dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         android:paddingLeft="70dp"
         android:paddingTop="10dp"
         android:paddingRight="70dp"
@@ -166,9 +181,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_zumSpiel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_kinder"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <Switch
         android:id="@+id/swch_zufall"
@@ -191,20 +207,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/etn_sucht"
-        android:layout_width="105dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="280dp"
-        android:layout_marginRight="280dp"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintVertical_bias="0.388" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
