@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.355" />
 
     <Switch
         android:id="@+id/switch_Videoanaus"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintVertical_bias="0.241" />
 
     <Spinner
         android:id="@+id/spin_sprache"
