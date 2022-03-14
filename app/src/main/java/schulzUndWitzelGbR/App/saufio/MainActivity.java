@@ -33,6 +33,7 @@ import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.Switch;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     public static final String PRODUCT_ID= "sport";
     Button btn_start, btn_add;
     //EditText
+    ImageButton btn_info_rundenbasis;
     EditText tp_spieler, et_sucht;
     //TextView
     TextView tv_spieler1;
@@ -152,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         Spielertxt = getResources().getString(R.string.spielernamen);
         swch_zufall = (Switch)findViewById(R.id.swch_zufall);
         cb_kinder = (CheckBox)findViewById(R.id.cb_kinder);
+        btn_info_rundenbasis = (ImageButton) findViewById(R.id.rundenbasis_info);
         //erstellen Numberpicker
         NumberPicker np = findViewById(R.id.numberPicker);
         np.setMinValue(minvalueshots);
@@ -168,14 +171,19 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
                     et_sucht.setVisibility(View.VISIBLE);
+                    btn_info_rundenbasis.setVisibility(View.INVISIBLE);
                     Log.i("Cbox",String.valueOf(isChecked));
                 }
                 else {
                     et_sucht.setVisibility(View.INVISIBLE);
+                    btn_info_rundenbasis.setVisibility(View.VISIBLE);
                     Log.i("Cbox",String.valueOf(isChecked));
                 }
             }
         });
+
+                // Todo Pop-Up für Rundenbasis erstellen
+
 
         final String[] kategroie = getResources().getStringArray(R.array.regeln);
         lv_kategorie.setOnItemClickListener(new AdapterView.OnItemClickListener() {

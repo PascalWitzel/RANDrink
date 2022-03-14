@@ -178,5 +178,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
 
+    <ImageButton
+        android:id="@+id/rundenbasis_info"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/pixil_button_main"
+        android:onClick="btn_info_rundenbasis"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_info"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/cb_kinder"
+        app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

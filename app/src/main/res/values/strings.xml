@@ -27,6 +27,7 @@
     <string name="spielernamen">Es gibt folgende Spieler:  </string>
     <string name="anzahlshots">Schluckanzahl:</string>
     <string name="rundenbasis">Rundenbasis</string>
+    <string name="rundenbasis_info">Wenn du Rundenbasis anklickst, kannst du die maximale Anzahl der Runden in diesem Spiel einstellen. Sobald jemand verloren hat ist eine Runde vorbei</string>
     <!-- Alerts -->
     <!-- Kein nickanme eingetragen -->
     <string name="alter_spielername_title">Spielername leer</string>
