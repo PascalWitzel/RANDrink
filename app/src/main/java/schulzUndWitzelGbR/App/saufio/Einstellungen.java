@@ -147,8 +147,8 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
         });
         btn_rewardw = (ImageButton) findViewById(R.id.imgbtn_rewardw);
         btn50 = (Button)findViewById(R.id.btn_50);
-        tv = (TextView)findViewById(R.id.textView6);
-        tv2 = (TextView)findViewById(R.id.textView7);
+        tv2 = (TextView)findViewById(R.id.textView6);
+        tv = (TextView)findViewById(R.id.textView7);
         btn_save=(Button)findViewById(R.id.btn_sprache_save);
         if (Allgemein.gebeBoolean(getApplicationContext(),Allgemein.KEY_ENTF_AD)){
             btn_rewardw.setVisibility(View.VISIBLE);
@@ -156,7 +156,7 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
         } else {
             btn_rewardw.setVisibility(View.INVISIBLE);
             btn50.setVisibility(View.INVISIBLE);
-            tv.setText("Vielen Dank das du die Werbung weggekauft hast :)");
+            tv.setText("Du hast dich von der lästigen Werbung befreit, die nächste Runde geht auf uns");
             tv2.setVisibility(View.INVISIBLE);
         }
         setzeTonbild();
