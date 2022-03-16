@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     public static final String PRODUCT_ID= "sport";
     Button btn_start, btn_add;
     //EditText
-    ImageButton btn_info_rundenbasis;
+    ImageButton btn_info_rundenbasis, btn_info_zufall;
     EditText tp_spieler, et_sucht;
     //TextView
     TextView tv_spieler1;
@@ -155,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         swch_zufall = (Switch)findViewById(R.id.swch_zufall);
         cb_kinder = (CheckBox)findViewById(R.id.cb_kinder);
         btn_info_rundenbasis = (ImageButton) findViewById(R.id.rundenbasis_info);
+        btn_info_zufall = (ImageButton) findViewById(R.id.zufall_info);
         //erstellen Numberpicker
         NumberPicker np = findViewById(R.id.numberPicker);
         np.setMinValue(minvalueshots);
@@ -182,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             }
         });
 
-                // Todo Pop-Up für Rundenbasis erstellen
+                // Todo Pop-Up für Rundenbasis erstellen und Pop-Up Zufall Button erstellen
 
 
         final String[] kategroie = getResources().getStringArray(R.array.regeln);

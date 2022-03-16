@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:minHeight="48dp"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:fontFamily="@font/pixel_art"
@@ -65,7 +65,7 @@
         android:id="@+id/etn_sucht"
         android:layout_width="105dp"
         android:layout_height="47dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="148dp"
         android:layout_marginRight="148dp"
         android:ems="10"
@@ -79,7 +79,7 @@
         android:id="@+id/numberPicker"
         android:layout_width="100dp"
         android:layout_height="130dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="148dp"
         android:layout_marginRight="148dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
@@ -208,7 +208,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.291" />
 
     <ImageButton
         android:id="@+id/rundenbasis_info"
@@ -226,5 +226,20 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/cb_kinder"
         app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
+
+    <ImageButton
+        android:id="@+id/zufall_info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pixil_button_main"
+        android:onClick="btn_info_zufall"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_info"
+        app:layout_constraintBottom_toTopOf="@+id/numberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/swch_zufall"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
+        app:layout_constraintVertical_bias="0.6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

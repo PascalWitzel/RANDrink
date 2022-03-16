@@ -225,5 +225,19 @@
         app:layout_constraintStart_toEndOf="@+id/cb_kinder"
         app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
 
+    <ImageButton
+        android:id="@+id/zufall_info"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/pixil_button_main"
+        android:onClick="btn_info_zufall"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_info"
+        app:layout_constraintBottom_toTopOf="@+id/numberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/swch_zufall"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
+        app:layout_constraintVertical_bias="0.571" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

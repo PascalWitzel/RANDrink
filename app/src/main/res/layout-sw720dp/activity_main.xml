@@ -102,7 +102,7 @@
         android:id="@+id/btn_zumSpiel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/pixil_button_main"
         android:fontFamily="@font/pixel_art"
         android:onClick="btn_zumSpiel"
@@ -176,9 +176,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
-        app:layout_constraintVertical_bias="0.181" />
+        app:layout_constraintVertical_bias="0.219" />
 
     <CheckBox
         android:id="@+id/cb_kinder"
@@ -216,9 +217,9 @@
 
     <ImageButton
         android:id="@+id/rundenbasis_info"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:background="@drawable/pixil_button_main"
@@ -231,4 +232,18 @@
         app:layout_constraintStart_toEndOf="@+id/cb_kinder"
         app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
 
+    <ImageButton
+        android:id="@+id/zufall_info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pixil_button_main"
+        android:onClick="btn_info_zufall"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_info"
+        app:layout_constraintBottom_toBottomOf="@+id/numberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toEndOf="@+id/swch_zufall"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
+        app:layout_constraintVertical_bias="0.175" />
 </androidx.constraintlayout.widget.ConstraintLayout>

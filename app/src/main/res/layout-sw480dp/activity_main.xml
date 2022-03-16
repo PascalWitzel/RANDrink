@@ -46,13 +46,13 @@
         android:id="@+id/numberPicker"
         android:layout_width="70dp"
         android:layout_height="96dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="300dp"
         android:layout_marginRight="300dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
         android:scrollbarThumbVertical="?attr/primaryTitleColor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler" />
 
@@ -145,7 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:fontFamily="@font/pixel_art"
@@ -156,15 +156,15 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/numberPicker"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler" />
 
     <ListView
         android:id="@+id/lv_kategorie"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginTop="84dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
@@ -193,7 +193,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
         app:layout_constraintVertical_bias="0.0" />
@@ -217,9 +217,9 @@
 
     <ImageButton
         android:id="@+id/rundenbasis_info"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="310dp"
         android:layout_marginRight="310dp"
         android:background="@drawable/pixil_button_main"
@@ -232,4 +232,19 @@
         app:layout_constraintStart_toEndOf="@+id/cb_kinder"
         app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
 
+    <ImageButton
+        android:id="@+id/zufall_info"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pixil_button_main"
+        android:onClick="btn_info_zufall"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_info"
+        app:layout_constraintBottom_toBottomOf="@+id/numberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/swch_zufall"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
+        app:layout_constraintVertical_bias="0.029999971" />
 </androidx.constraintlayout.widget.ConstraintLayout>
