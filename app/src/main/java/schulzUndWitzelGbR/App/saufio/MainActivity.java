@@ -544,4 +544,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
+
+    public void btn_info_rundenbasis(View view) {
+        Allgemein.alertOK(this,"test1","test2","ok");
+    }
 }
