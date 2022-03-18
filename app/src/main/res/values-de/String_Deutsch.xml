@@ -27,8 +27,10 @@
     <string name="spielernamen">Es gibt folgende Spieler:  </string>
     <string name="anzahlshots">Schluckanzahl:</string>
     <string name="rundenbasis">Rundenbasis</string>
-    <string name="rundenbasis_info">Wenn du Rundenbasis anklickst, kannst du die maximale Anzahl der Runden in diesem Spiel einstellen. Sobald jemand verloren hat ist eine Runde vorbei</string>
-    <string name="zufall_info">Wenn ihr die Zufallsoption einschaltet, dann ist die Reihenfolge in welcher die Spieler dran kommen zufällig. Ich mein, das sagt ja schon der Name.</string>
+    <string name="rundenbasis_info_title">Rundenbasis</string>
+    <string name="rundenbasis_info_text">Wenn du Rundenbasis anklickst, kannst du die maximale Anzahl der Runden in diesem Spiel einstellen. Sobald jemand verloren hat ist eine Runde vorbei</string>
+    <string name="zufall_info_title">Zufallerklärung</string>
+    <string name="zufall_info_text">Wenn ihr die Zufallsoption einschaltet, dann ist die Reihenfolge in welcher die Spieler dran kommen zufällig. Ich mein, das sagt ja schon der Name.</string>
     <!-- Alerts -->
     <!-- Kein nickanme eingetragen -->
     <string name="alter_spielername_title">Spielername leer</string>
@@ -151,9 +153,6 @@
     <!-- Sprachen -->
     <string-array name="sprachen_lang">
         <item>Deutsch</item>>
-        <item>Englisch</item>
-        <item>Spanisch</item>
-        <item>Französisch</item>
     </string-array>
 
     <!-- Aufgaben -->

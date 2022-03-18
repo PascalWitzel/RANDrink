@@ -546,6 +546,12 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     }
 
     public void btn_info_rundenbasis(View view) {
-        Allgemein.alertOK(this,"test1","test2","ok");
+        Allgemein.alertOK(this, getApplication().getString(R.string.rundenbasis_info_title), getApplication().getString(R.string.rundenbasis_info_text), getApplication().getString(R.string.ok));
     }
+
+    public void btn_info_zufall(View view) {
+        Allgemein.alertOK(this,getApplication().getString(R.string.zufall_info_title),getApplication().getString(R.string.zufall_info_text),getApplication().getString(R.string.ok));
+    }
+
+
 }
