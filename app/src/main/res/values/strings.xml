@@ -20,7 +20,9 @@
 
     <!--MainActivty-->
     <string name="tp_name">Spielername</string>
-    <string name="zufall">Zufall </string>
+    <string name="zufall_an">Zufall an</string>
+    <string name="zufall_aus">Zufall aus</string>
+
     <string name="hinzufuegen">Hinzufügen </string>
     <string name="start">Starten</string>
     <string name="spielernamenstart">Aktuell sind noch keine Spieler hinzugefügt</string>

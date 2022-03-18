@@ -167,7 +167,7 @@
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
         android:scrollbarThumbVertical="?attr/primaryTitleColor"
         android:switchMinWidth="55dp"
-        android:text="@string/zufall"
+        android:text="@string/zufall_aus"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
         android:textOff="AUS"

@@ -153,6 +153,15 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         lv_kategorie = (ListView) findViewById(R.id.lv_kategorie);
         Spielertxt = getResources().getString(R.string.spielernamen);
         swch_zufall = (Switch)findViewById(R.id.swch_zufall);
+        swch_zufall.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    swch_zufall.setText(getApplicationContext().getString(R.string.zufall_an));
+                } else {
+                    swch_zufall.setText(getApplicationContext().getString(R.string.zufall_aus));
+                }
+            }
+        });
         cb_kinder = (CheckBox)findViewById(R.id.cb_kinder);
         btn_info_rundenbasis = (ImageButton) findViewById(R.id.rundenbasis_info);
         btn_info_zufall = (ImageButton) findViewById(R.id.zufall_info);
@@ -552,6 +561,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     public void btn_info_zufall(View view) {
         Allgemein.alertOK(this,getApplication().getString(R.string.zufall_info_title),getApplication().getString(R.string.zufall_info_text),getApplication().getString(R.string.ok));
     }
+
 
 
 }

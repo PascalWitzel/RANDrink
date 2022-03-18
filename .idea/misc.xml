@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/schul/AndroidStudioProjects/RANDrink/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/schul/AndroidStudioProjects/RANDrink/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.3125" />
+        <entry key="..\:/Users/schul/AndroidStudioProjects/RANDrink/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.244140625" />
+        <entry key="..\:/Users/schul/AndroidStudioProjects/RANDrink/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/schul/AndroidStudioProjects/RANDrink/app/src/main/res/layout/activity_main.xml" value="0.6282894736842105" />
       </map>
     </option>
   </component>
