@@ -33,7 +33,7 @@
     <!-- Kein nickanme eingetragen -->
     <string name="alter_spielername_title">Spielername leer</string>
     <string name="alter_spielername_message">Der Spielername ist leer</string>
-    <!-- zu we nig Spieler -->
+    <!-- zu wenig Spieler -->
     <string name="alter_spieler_title">Es sind zu wenige Spieler!</string>
     <string name="alter_spieler_message">Es müssen mindestens 2 Spieler sein</string>
     <!--Toast-->
