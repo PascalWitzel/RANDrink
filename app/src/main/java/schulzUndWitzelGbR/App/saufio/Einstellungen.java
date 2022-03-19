@@ -72,6 +72,12 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
     }
 
     @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i("Inappbuy",String.valueOf(Allgemein.gebeBoolean(getApplication(),Allgemein.KEY_ENTF_AD)));

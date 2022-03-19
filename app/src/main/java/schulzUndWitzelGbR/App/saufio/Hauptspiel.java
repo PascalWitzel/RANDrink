@@ -109,6 +109,12 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
     private BillingClient billingClient;
 
     @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if(getResources().getBoolean(R.bool.portrait_only)){

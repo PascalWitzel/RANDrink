@@ -20,6 +20,12 @@ public class sucht extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
     public void btn_kennWebseite(View view) {
         try {
             startActivity(new Intent(Intent.ACTION_VIEW,
@@ -30,7 +36,7 @@ public class sucht extends AppCompatActivity {
 }
 
     public void btn_anrufsucht(View view) {
-        //todo nummer anpassen
+        //:todo nummer anpassen
         String phone = "666";
         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
         startActivity(intent);

@@ -22,6 +22,12 @@ public class Aufgabe extends AppCompatActivity{
     String kategorie;
 
     @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("HUANSAN","HUANSOOOOON");
         super.onCreate(savedInstanceState);
@@ -32,6 +38,8 @@ public class Aufgabe extends AppCompatActivity{
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
         setContentView(R.layout.activity_ac_aufgaben);
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public Aufgabe(){}
@@ -115,30 +123,6 @@ public class Aufgabe extends AppCompatActivity{
             a.setAufgabe(aufgabe[i]);
             d.addAufgabe(a);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
 
