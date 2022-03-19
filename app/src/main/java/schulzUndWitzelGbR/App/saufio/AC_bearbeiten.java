@@ -34,6 +34,8 @@ int id;
         if(getResources().getBoolean(R.bool.landscape_only)){
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_a_c_bearbeiten);
         btn_add = (Button) findViewById(R.id.btn_add);
         et_Aufgabe = (EditText) findViewById(R.id.et_Aufgabe);

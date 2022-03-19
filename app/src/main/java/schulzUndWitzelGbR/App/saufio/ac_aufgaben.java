@@ -48,6 +48,9 @@ public class ac_aufgaben extends AppCompatActivity implements AdapterView.OnItem
         if (getResources().getBoolean(R.bool.landscape_only)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         setContentView(R.layout.activity_ac_aufgaben);
         //Listview adapter
         listView = (ListView) findViewById(R.id.listview);
@@ -65,6 +68,7 @@ public class ac_aufgaben extends AppCompatActivity implements AdapterView.OnItem
                 int selectedFromList = (int) (listView.getItemIdAtPosition(myItemInt));
             }
         });
+
         //Spinner
         kategorien = db.getKategorien();
         kategorien.add(0, getResources().getString(R.string.alleaufgaben));

@@ -95,6 +95,17 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
             }
         });
         loadRewardedAd();
+
+  /*      if (Allgemein.gebeBoolean(getApplicationContext(),Allgemein.KEY_ENTF_AD)){
+            btn_rewardw.setVisibility(View.VISIBLE);
+            btn50.setVisibility(View.VISIBLE);
+        } else {
+            btn_rewardw.setVisibility(View.INVISIBLE);
+            btn50.setVisibility(View.INVISIBLE);
+            tv.setText("Du hast dich von der lästigen Werbung befreit, die nächste Runde geht auf uns");
+            tv2.setVisibility(View.INVISIBLE);
+        }*/
+
         assert getSupportActionBar() != null;   //null check
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ton = (ImageButton) findViewById(R.id.btn_ton);
