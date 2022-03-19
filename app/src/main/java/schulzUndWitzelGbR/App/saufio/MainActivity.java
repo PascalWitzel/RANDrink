@@ -115,6 +115,14 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         }
     }
 
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+
     //Beenden der App mit Zurücktaste
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
@@ -130,6 +138,10 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         checkNight();
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         if(getResources().getBoolean(R.bool.portrait_only)){
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
@@ -173,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         //ListView erstell
         lv_kategorie.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         if (Allgemein.gebeBoolean(getApplication(),Allgemein.KEY_ENTF_AD)==false){
-            //btn_add.setVisibility(View.INVISIBLE);
+            btn_add.setVisibility(View.INVISIBLE);
         }
 
         cb_kinder.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -191,9 +203,6 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
                 }
             }
         });
-
-                // Todo Pop-Up für Rundenbasis erstellen und Pop-Up Zufall Button erstellen
-
 
         final String[] kategroie = getResources().getStringArray(R.array.regeln);
         lv_kategorie.setOnItemClickListener(new AdapterView.OnItemClickListener() {

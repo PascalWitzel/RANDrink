@@ -124,6 +124,9 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
             }
         });
         loadRewardedAd();
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         tv_spieler1111 = (TextView) findViewById(R.id.tv_spieleranzeige);
         tv_kopfzahl = (TextView) findViewById(R.id.tv_kopfzahl);
         tv_aufgabe = (TextView) findViewById(R.id.tv_aufgabe);

@@ -27,6 +27,8 @@ public class Credits extends AppCompatActivity {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
         setContentView(R.layout.activity_credits);
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btn_email=(ImageButton)findViewById(R.id.imgbtn_email);
         btn_insta=(ImageButton)findViewById(R.id.imgBtn_instagram);
         btn_share=(ImageButton)findViewById(R.id.imgBtn_share);

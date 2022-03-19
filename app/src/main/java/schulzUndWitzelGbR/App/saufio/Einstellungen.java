@@ -89,6 +89,8 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
             }
         });
         loadRewardedAd();
+        assert getSupportActionBar() != null;   //null check
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ton = (ImageButton) findViewById(R.id.btn_ton);
         spin_sprache=(Spinner)findViewById(R.id.spin_sprache);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
