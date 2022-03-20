@@ -80,15 +80,14 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i("Inappbuy",String.valueOf(Allgemein.gebeBoolean(getApplication(),Allgemein.KEY_ENTF_AD)));
-
+        setContentView(R.layout.activity_einstellungen);
+        //Log.i("Inappbuy",String.valueOf(Allgemein.gebeBoolean(getApplication(),Allgemein.KEY_ENTF_AD)));
         if(getResources().getBoolean(R.bool.portrait_only)){
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
         if(getResources().getBoolean(R.bool.landscape_only)){
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         }
-        setContentView(R.layout.activity_einstellungen);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
@@ -96,15 +95,7 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
         });
         loadRewardedAd();
 
-  /*      if (Allgemein.gebeBoolean(getApplicationContext(),Allgemein.KEY_ENTF_AD)){
-            btn_rewardw.setVisibility(View.VISIBLE);
-            btn50.setVisibility(View.VISIBLE);
-        } else {
-            btn_rewardw.setVisibility(View.INVISIBLE);
-            btn50.setVisibility(View.INVISIBLE);
-            tv.setText("Du hast dich von der lästigen Werbung befreit, die nächste Runde geht auf uns");
-            tv2.setVisibility(View.INVISIBLE);
-        }*/
+
 
         assert getSupportActionBar() != null;   //null check
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -215,7 +206,6 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
 
     public void btn_werbung(View view) {
         Log.i("Hure wurde gedrückt", "Fotze");
-        //todo: in app buy
         purchase();
     }
 

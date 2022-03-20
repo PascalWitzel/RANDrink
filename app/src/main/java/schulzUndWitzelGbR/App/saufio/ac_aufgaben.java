@@ -40,6 +40,12 @@ public class ac_aufgaben extends AppCompatActivity implements AdapterView.OnItem
     DatabaseHandler db = new DatabaseHandler(this);
 
     @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getResources().getBoolean(R.bool.portrait_only)) {

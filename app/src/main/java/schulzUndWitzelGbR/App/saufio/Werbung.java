@@ -22,6 +22,7 @@ public class Werbung {
     public int minuten = 0;
 
 
+    //:todo String auf unsere Werbung anpassen
     public static String interstalize = "ca-app-pub-3594566801106885/3731320663";
     public static String unitid = "ca-app-pub-3594566801106885/3731320663";
     //REWARDCODE
