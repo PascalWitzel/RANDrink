@@ -65,54 +65,48 @@ public class Werbung {
             mRewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
                 @Override
                 public void onRewardedVideoAdLoaded() {
-                    Log.i("HIUA", "loaded");
+
                 }
 
                 @Override
                 public void onRewardedVideoAdOpened() {
-                    Log.i("HIUA", "opem");
                     minuten = minuten + 1;
                 }
 
                 @Override
                 public void onRewardedVideoStarted() {
-                    Log.i("HIUA", "started");
                     minuten = minuten + 1;
                 }
 
                 @Override
                 public void onRewardedVideoAdClosed() {
-                    Log.i("HIUA", "closed");
                     angeschaut = false;
                 }
 
                 @Override
                 public void onRewarded(RewardItem rewardItem) {
-                    Log.i("HIUA", "rewartitem");
                     angeschaut = true;
                     minuten = minuten + 5;
                 }
 
                 @Override
                 public void onRewardedVideoAdLeftApplication() {
-                    Log.i("HIUA", "leftaplli");
                     angeschaut = false;
                 }
 
                 @Override
                 public void onRewardedVideoAdFailedToLoad(int i) {
-                    Log.i("HIUA", "failed");
                     angeschaut = false;
                 }
 
                 @Override
                 public void onRewardedVideoCompleted() {
-                    Log.i("HIUA", "colplete");
+
                 }
 
             });
+            //todo string anpassen werbung
             mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917", new AdRequest.Builder().build());
-            Log.i("HIUA", "geladen");
             mRewardedVideoAd.show();
             mRewardedVideoAd.show();
             return mRewardedVideoAd;

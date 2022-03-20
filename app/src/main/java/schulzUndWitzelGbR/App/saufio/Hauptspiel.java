@@ -196,7 +196,6 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
         w.setAngeschaut(getIntent().getBooleanExtra("key5", false));
         ad = w.rewardwerbung();
         sicherung= getIntent().getIntExtra("key6", 2147483647);
-        Log.i("HURRRE",String.valueOf(sicherung));
         billingClient = BillingClient.newBuilder(this)
                 .enablePendingPurchases().setListener(this).build();
         billingClient.startConnection(new BillingClientStateListener() {
@@ -338,9 +337,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
         for (int i = 0; i < max_shots + 1; i++) {
             txt = txt.replace((i) + " " + getResources().getString(R.string.mehrzahlschluck), "$");
         }
-        Log.i("HURENSAN",txt);
         Aufgabe a = db.sucheUeberTxt(txt);
-        Log.i("HURENSAN",a.getKategorie());
         if (a.getKategorie().equals(getResources().getString(R.string.kategroie1))) {
             Allgemein.alertOK(this, getResources().getString(R.string.alter_kategorie_title1), getResources().getString(R.string.alter_kategorie_message1), getResources().getString(R.string.verstanden));
         }
@@ -615,11 +612,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
     public void ausblenden_k_o_z() {
         btnimg_zahl.setVisibility(View.INVISIBLE);
         btnimg_kopf.setVisibility(View.INVISIBLE);
-        Log.i("HURRE",String.valueOf(sicherung));
-        Log.i("HURRE",String.valueOf(anzahl_aufgaben));
         if (sicherung==anzahl_aufgaben){
-            Log.i("HURRE",String.valueOf(sicherung));
-            Log.i("HURRE",String.valueOf(anzahl_aufgaben));
             statiskUndEnde(true);
         }
     }
@@ -672,12 +665,10 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
     // Text to Speech, abbrechen bzw. Ausgabe
     public void sprachausgabe(String aufgabe) {
         if (Allgemein.gebeBoolean(this, Allgemein.KEY_TON)) {
-            Log.i("Liebe", String.valueOf(Allgemein.gebeBoolean(this, Allgemein.KEY_TON)));
             if (textspeech != null) {
                 textspeech.stop();
             }
             textspeech.speak(aufgabe, TextToSpeech.QUEUE_FLUSH, null);
-            Log.i("Liebe", String.valueOf(textspeech.isSpeaking()));
         }
     }
 
@@ -703,7 +694,6 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
     //Buttonston
     public void buttonton() {
         Boolean ton = Allgemein.gebeBoolean(this, Allgemein.KEY_TON);
-        Log.i("TON", String.valueOf(ton));
         btnimg_ton.setSoundEffectsEnabled(ton);
         btnimg_zahl.setSoundEffectsEnabled(ton);
         btnimg_kopf.setSoundEffectsEnabled(ton);
@@ -712,7 +702,6 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
         imgbtn_info.setSoundEffectsEnabled(ton);
         Allgemein.setzteBoolean(this, Allgemein.KEY_TON);
         ton = Allgemein.gebeBoolean(this, Allgemein.KEY_TON);
-        Log.i("TON", String.valueOf(ton));
     }
     //endregion
 
@@ -824,13 +813,12 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
                     werbungzahlgebe = 0;
                 } else {
                     werbungzahlgebe++;
-                    Log.i("HUAN", String.valueOf(werbungmax) + " " + String.valueOf(werbungzahlgebe) + " " + werbungwann);
+                    Log.i("Werbung", String.valueOf(werbungmax) + " " + String.valueOf(werbungzahlgebe) + " " + werbungwann);
                 }
             } else {
                 wert = wert - 1;
                 Allgemein.setzeString(this, Allgemein.KEY_SPEICHERRUNDEN, String.valueOf(wert));
             }
-            Log.i("Speicherround", String.valueOf(wert));
         }
     }
 
@@ -900,15 +888,13 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
                             Allgemein.setzeString(getApplicationContext(),Allgemein.KEY_SPEICHERRUNDEN,String.valueOf(wert));
                             //String ersezten
                             Toast.makeText(Hauptspiel.this, "Belohnung erhalten", Toast.LENGTH_SHORT).show();
-                            Log.i("Speicherround",String.valueOf(wert));
                         }
 
                         @Override
                         public void onRewardedAdFailedToShow(AdError adError) {
                             // Ad failed to display
                             //String ersezten
-                          Toast.makeText(Hauptspiel.this, "Werbung kann nicht geladen werden", Toast.LENGTH_SHORT);
-                   //                 .show();
+                          Toast.makeText(Hauptspiel.this, "Werbung kann nicht geladen werden", Toast.LENGTH_SHORT).show();
                         }
                     };
             rewardedAd.show(this, adCallback);

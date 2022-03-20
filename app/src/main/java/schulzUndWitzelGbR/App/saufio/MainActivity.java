@@ -194,12 +194,10 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
                 if (isChecked){
                     et_sucht.setVisibility(View.VISIBLE);
                     btn_info_rundenbasis.setVisibility(View.INVISIBLE);
-                    Log.i("Cbox",String.valueOf(isChecked));
                 }
                 else {
                     et_sucht.setVisibility(View.INVISIBLE);
                     btn_info_rundenbasis.setVisibility(View.VISIBLE);
-                    Log.i("Cbox",String.valueOf(isChecked));
                 }
             }
         });

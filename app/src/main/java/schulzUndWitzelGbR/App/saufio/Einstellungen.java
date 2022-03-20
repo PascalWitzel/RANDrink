@@ -205,7 +205,7 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
     }
 
     public void btn_werbung(View view) {
-        Log.i("Hure wurde gedrückt", "Fotze");
+        Log.i("IN-App-Buy", "kauf abschließen");
         purchase();
     }
 

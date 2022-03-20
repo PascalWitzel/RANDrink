@@ -32,7 +32,7 @@ public class sucht extends AppCompatActivity {
                     //Webseite Selbsttest
                     Uri.parse("https://www.kenn-dein-limit.de/alkohol-tests/alkohol-selbsttest/")));
         } catch (ActivityNotFoundException e){
-            Log.i("exceptiopn",String.valueOf(e));
+            Log.i("Error Webseite",String.valueOf(e));
     }
 }
 
