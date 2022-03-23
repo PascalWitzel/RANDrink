@@ -74,6 +74,7 @@ public class ac_aufgaben extends AppCompatActivity implements AdapterView.OnItem
                 int selectedFromList = (int) (listView.getItemIdAtPosition(myItemInt));
             }
         });
+        Allgemein.alertOK(this,getResources().getString(R.string.pop_up_title),getResources().getString(R.string.pop_up),getResources().getString(R.string.pop_up_verstanden));
 
         //Spinner
         kategorien = db.getKategorien();

@@ -138,6 +138,9 @@
     <string name="alleaufgaben">Alle Aufgaben</string>
     <string name="aufgabehint">Aufgabe hier eintragen</string>
     <string name="aufgabeleer1"></string>
+    <string name="pop_up">Wenn ihr lange auf eine Aufgabe drückt, könnt ihr diese bearbeiten oder löschen</string>
+    <string name="pop_up_title">Extra Features </string>
+    <string name="pop_up_verstanden">Mega, teste ich gleich aus</string>
 
     <!-- AC bearbeiten -->
     <string name="update">Aufgabe updaten</string>
