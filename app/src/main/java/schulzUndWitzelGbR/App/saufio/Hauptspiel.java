@@ -838,15 +838,15 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
                             public void onRewardedAdLoaded() {
                                 // Ad successfully loaded.
                                 Hauptspiel.this.isLoading = false;
-                            //    Toast.makeText(Hauptspiel.this, "onRewardedAdLoaded", Toast.LENGTH_SHORT).show();
+                              Toast.makeText(Hauptspiel.this, "onRewardedAdLoaded", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onRewardedAdFailedToLoad(LoadAdError loadAdError) {
                                 // Ad failed to load.
                                 Hauptspiel.this.isLoading = false;
-                        //        Toast.makeText(Hauptspiel.this, "onRewardedAdFailedToLoad", Toast.LENGTH_SHORT)
-                          //              .show();
+                                Toast.makeText(Hauptspiel.this, "onRewardedAdFailedToLoad", Toast.LENGTH_SHORT)
+                                      .show();
                             }
                         });
             }
@@ -861,7 +861,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
                         @Override
                         public void onRewardedAdOpened() {
                             // Ad opened.
-                           // Toast.makeText(Hauptspiel.this, "onRewardedAdOpened", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(Hauptspiel.this, "onRewardedAdOpened", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override
@@ -870,7 +870,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
                           //
                             //
                             //
-                            //  Toast.makeText(Hauptspiel.this, "onRewardedAdClosed", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(Hauptspiel.this, "onRewardedAdClosed", Toast.LENGTH_SHORT).show();
                             // Preload the next video ad.
                         }
 

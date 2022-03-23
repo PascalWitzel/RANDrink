@@ -277,6 +277,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             }
         i.putExtra("key6",rundeanzahlx);
             String s = gebeKategorie();//.substring(0,gebeKategorie().length()-1);
+            Log.i("Kategorie",s);
             if (s !="0"){
                 i.putExtra("key3",s);
                 if(s.matches(".*"+getResources().getString(R.string.kategroie1)+".*")){

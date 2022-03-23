@@ -108,6 +108,13 @@ public class Aufgabe extends AppCompatActivity{
             d.addAufgabe(a);
         }
 
+        a.setKategorie(c.getResources().getString(R.string.kategorie4));
+        aufgabe=c.getResources().getStringArray(R.array.kategorie4_aufgaben);
+        for (int i=0; i<aufgabe.length;i++){
+            a.setAufgabe(aufgabe[i]);
+            d.addAufgabe(a);
+        }
+
         //Kategorie gamer
         a.setKategorie(c.getResources().getString(R.string.kategorie3));
         aufgabe=c.getResources().getStringArray(R.array.kategorie3_aufgaben);
@@ -116,12 +123,6 @@ public class Aufgabe extends AppCompatActivity{
             d.addAufgabe(a);
         }
 
-        a.setKategorie(c.getResources().getString(R.string.kategorie4));
-        aufgabe=c.getResources().getStringArray(R.array.kategorie4_aufgaben);
-        for (int i=0; i<aufgabe.length;i++){
-            a.setAufgabe(aufgabe[i]);
-            d.addAufgabe(a);
-        }
     }
 }
 
