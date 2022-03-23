@@ -145,6 +145,7 @@
     <string name="Aufgabeadden">Aufgabe hinzufügen</string>
     <string name="aufgabeleer">Aufgabe darf nicht leer sein</string>
     <string name="aufgabeadded">Aufgabe wurde hinzugefügt</string>
+    <string name="infoBearbeiten">Wenn ihr eine Aufgabe bearbeitet oder hinzufügt, achtet darauf, dass ein Trinke $ in der Aufgabe enthalten ist </string>
 
     <!-- Sucht -->
     <string name="suechtig">Du trinkst oft und viel?</string>
