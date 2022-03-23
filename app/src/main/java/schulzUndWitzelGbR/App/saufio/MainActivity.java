@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         //ListView erstell
         lv_kategorie.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         if (Allgemein.gebeBoolean(getApplication(),Allgemein.KEY_ENTF_AD)==false){
-            btn_add.setVisibility(View.INVISIBLE);
+            //btn_add.setVisibility(View.INVISIBLE);
         }
 
         cb_kinder.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

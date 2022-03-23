@@ -762,7 +762,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
         anzahlrunde = Integer.valueOf(df.format(anzahlrunde));
         AlertDialog werbungfrei = new AlertDialog.Builder(this).create();
         werbungfrei.setTitle(getResources().getString(R.string.alert_webefrei_title));
-        werbungfrei.setMessage(getResources().getString(R.string.alert_werbefrei_message1)+anzahlrunde + getResources().getString(R.string.alert_werbefrei_message2));
+        werbungfrei.setMessage(getResources().getString(R.string.alert_werbefrei_message1)+ " " + anzahlrunde + " " + getResources().getString(R.string.alert_werbefrei_message2));
         werbungfrei.setButton(AlertDialog.BUTTON_POSITIVE, getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

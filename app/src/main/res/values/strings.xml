@@ -77,7 +77,7 @@
     <string name="alter_spielerfrage">Welcher Spieler soll gelöscht werden?</string>
     <string name="alert_werbefrei_title">Werbefrei spielen?</string>
     <string name="alert_werbefrei_message1">Möchtest du die nächsten </string>
-    <string name="alert_werbefrei_message2"> werbefrei spielen? Dann schau dir dieses kurze Video an.</string>
+    <string name="alert_werbefrei_message2"> Runden werbefrei spielen? Dann schau dir dieses kurze Video an.</string>
     <!-- Halbzeit alert -->
     <string name="alert_halbzeit_title">Halbzeit</string>
     <string name="alert_halbzeit_message1">Ihr habt die Hälfte geschafft! Könnt ihr noch weiterspielen? Es sind noch</string>

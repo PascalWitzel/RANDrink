@@ -223,7 +223,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toEndOf="@+id/cb_kinder"
-        app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
+        app:layout_constraintTop_toBottomOf="@+id/numberPicker"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/zufall_info"
@@ -238,6 +239,7 @@
         app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toEndOf="@+id/swch_zufall"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
