@@ -781,6 +781,24 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
 
     //Werbung zufall
     public void werbungYN_banner() {
+        if (aufgabelist.size() == halbzeit) {
+            werbungzahlgebe = werbungzahlgebe - r.nextInt(3) + 3;
+            AlertDialog halbzeit = new AlertDialog.Builder(this).create();
+            halbzeit.setTitle(getResources().getString(R.string.alert_halbzeit_title));
+            halbzeit.setMessage(getResources().getString(R.string.alert_halbzeit_message1) + halbzeit + getResources().getString(R.string.alert_halbzeit_message2));
+            halbzeit.setButton(AlertDialog.BUTTON_POSITIVE, getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    statiskUndEnde(false);
+                }
+            });
+            halbzeit.setButton(AlertDialog.BUTTON_NEGATIVE, getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+        }
         if (Allgemein.gebeBoolean(this, Allgemein.KEY_WERBUNG)) {
             int wert;
             try {
@@ -789,24 +807,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
                 wert = 0;
             }
             if (wert == 0) {
-                if (aufgabelist.size() == halbzeit) {
-                    werbungzahlgebe = werbungzahlgebe - r.nextInt(3) + 3;
-                    AlertDialog halbzeit = new AlertDialog.Builder(this).create();
-                    halbzeit.setTitle(getResources().getString(R.string.alert_halbzeit_title));
-                    halbzeit.setMessage(getResources().getString(R.string.alert_halbzeit_message1) + halbzeit + getResources().getString(R.string.alert_halbzeit_message2));
-                    halbzeit.setButton(AlertDialog.BUTTON_POSITIVE, getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            statiskUndEnde(false);
-                        }
-                    });
-                    halbzeit.setButton(AlertDialog.BUTTON_NEGATIVE, getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
 
-                        }
-                    });
-                }
                 if (werbungzahlgebe == werbungwann) {
                     w.klick_werbung();
                     werbungmax = r.nextInt(werbungmax) + werbungmin;
