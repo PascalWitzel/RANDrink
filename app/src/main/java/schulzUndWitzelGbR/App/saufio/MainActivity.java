@@ -280,8 +280,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             Log.i("Kategorie",s);
             if (s !="0"){
                 i.putExtra("key3",s);
-                if(s.matches(".*"+getResources().getString(R.string.kategroie1)+".*")){
-                    alertRegeln(i,this, getResources().getString(R.string.alter_kategorie_title1), getResources().getString(R.string.alter_kategorie_message1), getResources().getString(R.string.verstanden));
+                if(s.matches(".*"+getResources().getString(R.string.kategroie1)+"kw.*")){
+                    //alertRegeln(i,this, getResources().getString(R.string.alter_kategorie_title1), getResources().getString(R.string.alter_kategorie_message1), getResources().getString(R.string.verstanden));
                 } else {
                 startActivity(i);
                 }
@@ -350,13 +350,23 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     private String gebeKategorie(){
     SparseBooleanArray sp = lv_kategorie.getCheckedItemPositions();
     StringBuilder sb= new StringBuilder();
+    Log.i("HURE1",sb.toString());
         for(int i=0;i<sp.size();i++){
         if(sp.valueAt(i)==true){
+            Log.i("HURE12",sb.toString());
             sb.append("'");
-            String s = ((CheckedTextView) lv_kategorie.getChildAt(i)).getText().toString();
-            sb = sb.append(s+"',");
+            String s;
+            try {
+                s = ((CheckedTextView) lv_kategorie.getChildAt(i)).getText().toString();
+            } finally {
+                //TODO Bug beheben, Kategorien
+                sb = sb.append("Sport");
+            }
+
+                sb = sb.append(s+"',");
             }
         }
+
         if (sb.length()==0){
             return "0";
         }

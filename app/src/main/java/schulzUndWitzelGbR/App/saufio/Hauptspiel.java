@@ -108,6 +108,7 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
     public static final String PRODUCT_ID= "entf_ad";
     private BillingClient billingClient;
 
+
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
@@ -341,6 +342,8 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
         if (a.getKategorie().equals(getResources().getString(R.string.kategroie1))) {
             Allgemein.alertOK(this, getResources().getString(R.string.alter_kategorie_title1), getResources().getString(R.string.alter_kategorie_message1), getResources().getString(R.string.verstanden));
         }
+
+        //TODO Info button Text Anpassen
     }
 
     public void btn_werbung(View view) {

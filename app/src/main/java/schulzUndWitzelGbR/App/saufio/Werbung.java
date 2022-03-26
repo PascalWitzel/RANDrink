@@ -15,6 +15,8 @@ import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 public class Werbung {
 
+    //TODO Strings add mode anpassen
+
     private RewardedVideoAd mRewardedVideoAd;
     private InterstitialAd interstitialAd;
     Context c;

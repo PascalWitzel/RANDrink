@@ -65,6 +65,7 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
     //public static final String PURCHASE_KEY= "hure";
     public static final String PRODUCT_ID= "entf_ad";
 
+//TODO Münzwurf und Nachtmodus Text dynamisch
 
     @Override
     public void onBackPressed() {

@@ -24,6 +24,8 @@ EditText et_Aufgabe;
 Spinner spinner;
 int id;
 
+
+//TODO zurück Button oben
     DatabaseHandler db = new DatabaseHandler(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
