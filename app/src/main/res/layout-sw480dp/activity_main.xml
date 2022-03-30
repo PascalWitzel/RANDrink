@@ -16,7 +16,7 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -26,10 +26,10 @@
         android:id="@+id/cb_kinder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:layout_marginBottom="16dp"
         android:minHeight="48dp"
         android:text="@string/rundenbasis"
@@ -37,23 +37,21 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/lv_kategorie"
         app:layout_constraintEnd_toStartOf="@+id/etn_sucht"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.754" />
 
     <NumberPicker
         android:id="@+id/numberPicker"
         android:layout_width="70dp"
         android:layout_height="96dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginRight="300dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
         android:scrollbarThumbVertical="?attr/primaryTitleColor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler" />
 
     <Button
@@ -84,8 +82,8 @@
         android:id="@+id/tp_spieler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="296dp"
-        android:layout_marginLeft="296dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="@font/pixel_art"
@@ -137,15 +135,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lv_kategorie"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.72" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:fontFamily="@font/pixel_art"
@@ -156,15 +154,14 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/numberPicker"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler" />
 
     <ListView
         android:id="@+id/lv_kategorie"
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="477dp"
+        android:layout_height="194dp"
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
@@ -172,7 +169,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
+        tools:layout_editor_absoluteY="492dp" />
 
     <Switch
         android:id="@+id/swch_zufall"
@@ -193,17 +190,33 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.455" />
+
+    <ImageButton
+        android:id="@+id/zufall_info"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pixil_button_main"
+        android:onClick="btn_info_zufall"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_info"
+        app:layout_constraintBottom_toBottomOf="@+id/numberPicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toEndOf="@+id/swch_zufall"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
+        app:layout_constraintVertical_bias="0.252" />
 
     <EditText
         android:id="@+id/etn_sucht"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="240dp"
-        android:layout_marginRight="240dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="numberSigned"
@@ -213,38 +226,24 @@
         app:layout_constraintBottom_toTopOf="@+id/lv_kategorie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.754" />
 
     <ImageButton
         android:id="@+id/rundenbasis_info"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="310dp"
-        android:layout_marginRight="310dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
         android:background="@drawable/pixil_button_main"
         android:onClick="btn_info_rundenbasis"
         android:scaleType="fitCenter"
         android:src="@drawable/pixel_info"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/lv_kategorie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toEndOf="@+id/cb_kinder"
-        app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.655" />
 
-    <ImageButton
-        android:id="@+id/zufall_info"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/pixil_button_main"
-        android:onClick="btn_info_zufall"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pixel_info"
-        app:layout_constraintBottom_toBottomOf="@+id/numberPicker"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
-        app:layout_constraintStart_toEndOf="@+id/swch_zufall"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Spieler"
-        app:layout_constraintVertical_bias="0.029999971" />
 </androidx.constraintlayout.widget.ConstraintLayout>

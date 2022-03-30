@@ -21,8 +21,8 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="655dp"
-        android:layout_height="151dp"
+        android:layout_width="466dp"
+        android:layout_height="166dp"
         android:fontFamily="@font/pixel_art"
         android:gravity="center_horizontal"
         android:text="@string/suechtig"
