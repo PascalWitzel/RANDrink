@@ -25,7 +25,7 @@ Spinner spinner;
 int id;
 
 
-//TODO zurück Button oben
+
     DatabaseHandler db = new DatabaseHandler(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +67,12 @@ int id;
     @Override
     public void onBackPressed() {
         startActivity(new Intent(AC_bearbeiten.this, ac_aufgaben.class));
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 
     //Update Aufgabe
