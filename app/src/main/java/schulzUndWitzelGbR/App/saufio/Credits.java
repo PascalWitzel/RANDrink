@@ -45,7 +45,7 @@ public class Credits extends AppCompatActivity {
 
     //Button Instagra
     public void btnimg_instagram(View view) {
-        Uri uri = Uri.parse("https://www.instagram.com/saufio_newdrinkinggame/");
+        Uri uri = Uri.parse("https://www.instagram.com/schulzwitzelgbr/");
         Intent insta = new Intent(Intent.ACTION_VIEW, uri);
         insta.setPackage("com.instagram.android");
         try {
