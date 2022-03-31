@@ -342,8 +342,16 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
         if (a.getKategorie().equals(getResources().getString(R.string.kategroie1))) {
             Allgemein.alertOK(this, getResources().getString(R.string.alter_kategorie_title1), getResources().getString(R.string.alter_kategorie_message1), getResources().getString(R.string.verstanden));
         }
-
-        //TODO Info button Text Anpassen
+        else if (a.getKategorie().equals(getResources().getString(R.string.kategorie2))) {
+            Allgemein.alertOK(this, getResources().getString(R.string.alter_kategorie_title2), getResources().getString(R.string.alter_kategorie_message2), getResources().getString(R.string.verstanden));
+        }
+        else if (a.getKategorie().equals(getResources().getString(R.string.kategorie3))) {
+            Allgemein.alertOK(this, getResources().getString(R.string.alter_kategorie_title3), getResources().getString(R.string.alter_kategorie_message3), getResources().getString(R.string.verstanden));
+        }
+        else if (a.getKategorie().equals(getResources().getString(R.string.kategorie4))) {
+            Allgemein.alertOK(this, getResources().getString(R.string.alter_kategorie_title4), getResources().getString(R.string.alter_kategorie_message4), getResources().getString(R.string.verstanden));
+        }
+        
     }
 
     public void btn_werbung(View view) {
