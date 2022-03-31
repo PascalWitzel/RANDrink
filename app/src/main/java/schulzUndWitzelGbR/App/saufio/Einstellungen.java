@@ -65,7 +65,7 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
     //public static final String PURCHASE_KEY= "hure";
     public static final String PRODUCT_ID= "entf_ad";
 
-//TODO Münzwurf und Nachtmodus Text dynamisch
+
 
     @Override
     public void onBackPressed() {
@@ -108,20 +108,37 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
         spin_sprache.setAdapter(adapter);
         videoan = (Switch)findViewById(R.id.switch_Videoanaus);
         videoan.setChecked(Allgemein.gebeBoolean(this,Allgemein.KEY_VIDEO));
+        if (Allgemein.gebeBoolean(this,Allgemein.KEY_VIDEO)) {
+            videoan.setText(getApplicationContext().getString(R.string.switch_video_an));
+        } else {
+            videoan.setText(getApplicationContext().getString(R.string.switch_video_aus));
+        }
         videoan.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 Allgemein.setzteBoolean(getApplicationContext(),Allgemein.KEY_VIDEO);
+                if (isChecked) {
+                    videoan.setText(getApplicationContext().getString(R.string.switch_video_an));
+                } else {
+                    videoan.setText(getApplicationContext().getString(R.string.switch_video_aus));
+                }
             }});
         aSwitch = findViewById(R.id.switch1);
         aSwitch.setChecked(!Allgemein.gebeBoolean(this,Allgemein.KEY_ISNIGHTMODE));
+        if (Allgemein.gebeBoolean(this,Allgemein.KEY_ISNIGHTMODE)) {
+            aSwitch.setText(getApplicationContext().getString(R.string.dark_an));
+        } else {
+            aSwitch.setText(getApplicationContext().getString(R.string.dark_aus));
+        }
         aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(Allgemein.gebeBoolean(getApplicationContext(),Allgemein.KEY_ISNIGHTMODE)) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    aSwitch.setText(getApplicationContext().getString(R.string.dark_an));
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    aSwitch.setText(getApplicationContext().getString(R.string.dark_aus));
                 }
                 Allgemein.setzteBoolean(getApplicationContext(), Allgemein.KEY_ISNIGHTMODE);
                 finish();

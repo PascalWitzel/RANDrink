@@ -117,8 +117,12 @@
     <string name="fuenfzig">+50</string>
     <string name="rundenerklärungoben">Schaut euch Werbung an, um</string>
     <string name="rundenerklärungunten">Runden ohne Unterbrechungen zu spielen.</string>
-    <string name="dark">Darkmode</string>
+    <string name="dark_an">Darkmode an</string>
+    <string name="dark_aus">Darkmode aus</string>
+    <string name="dark">Darkmode aus</string>
     <string name="switch_video_an">Münzwurf an</string>
+    <string name="switch_video">Münzwurf an</string>
+    <string name="switch_video_aus">Münzwurf aus</string>
     <string name="btn_sprache_speichern">Sprache Speichern</string>
 
     <!--Alerts -->
