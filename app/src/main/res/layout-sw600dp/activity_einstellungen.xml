@@ -57,7 +57,7 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="220dp"
+        android:layout_width="318dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:text="@string/dark"
