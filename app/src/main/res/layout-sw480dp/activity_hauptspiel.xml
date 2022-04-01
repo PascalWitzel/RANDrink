@@ -40,11 +40,12 @@
         app:layout_constraintVertical_bias="0.518"
         app:srcCompat="@drawable/background02" />
 
+
     <TextView
         android:id="@+id/tv_spieleranzeige"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="156dp"
         android:gravity="center_horizontal"
         android:text="TextView"
         android:textAlignment="center"
@@ -56,7 +57,6 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/img_background" />
-
 
     <Button
         android:id="@+id/btn_zufall"
@@ -267,6 +267,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:minHeight="48dp"
         android:text="@string/switchvideo"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"

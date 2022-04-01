@@ -162,14 +162,15 @@
         android:id="@+id/lv_kategorie"
         android:layout_width="477dp"
         android:layout_height="194dp"
+        android:layout_marginTop="148dp"
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
         android:scrollbarThumbHorizontal="?attr/primaryTitleColor"
         android:scrollbarThumbVertical="?attr/primaryTitleColor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="492dp" />
+        app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
 
     <Switch
         android:id="@+id/swch_zufall"
