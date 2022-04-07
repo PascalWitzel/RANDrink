@@ -313,7 +313,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
                 Spieler.add(spielerstring);
                 Spielertxt = Spielertxt + " " + tp_spieler.getText().toString() + ",";
                 tv_spieler1.setText(Spielertxt.toString().substring(0, Spielertxt.length() - 1));
-                tp_spieler.setText("");
+
                 // Verstecke Keybord
                 InputMethodManager keybord = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 keybord.hideSoftInputFromWindow(tp_spieler.getWindowToken(), 0);
@@ -321,6 +321,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
                 tp_spieler.setText("");
                 x.setGravity(Gravity.BOTTOM, 0, 0);
                 x.show();
+                tp_spieler.setText("");
             }
         } else {
             Allgemein.alertOK(this, getResources().getString(R.string.alter_spielername_title), getResources().getString(R.string.alter_spielername_message), getResources().getString(R.string.ok));

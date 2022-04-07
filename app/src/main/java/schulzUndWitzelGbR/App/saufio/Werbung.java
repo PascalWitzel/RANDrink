@@ -15,7 +15,6 @@ import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 public class Werbung {
 
-    //TODO Strings add mode anpassen
 
     private RewardedVideoAd mRewardedVideoAd;
     private InterstitialAd interstitialAd;
@@ -24,11 +23,11 @@ public class Werbung {
     public int minuten = 0;
 
 
-    //:todo String auf unsere Werbung anpassen
-    public static String interstalize = "ca-app-pub-3594566801106885/3731320663";
-    public static String unitid = "ca-app-pub-3594566801106885/3731320663";
+
+    public static String interstalize = "ca-app-pub-3594566801106885/8401870055";
+    public static String unitid = "ca-app-pub-3594566801106885/8401870055";
     //REWARDCODE
-    public static  String AD_UNIT_ID = "ca-app-pub-3594566801106885/3731320663";
+    public static  String AD_UNIT_ID = "ca-app-pub-3594566801106885/8401870055";
 
     public Werbung(Context c, boolean angeschaut) {
         this.c = c;
@@ -107,8 +106,8 @@ public class Werbung {
                 }
 
             });
-            //todo string anpassen werbung
-            mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917", new AdRequest.Builder().build());
+
+            mRewardedVideoAd.loadAd("ca-app-pub-3594566801106885/8401870055", new AdRequest.Builder().build());
             mRewardedVideoAd.show();
             mRewardedVideoAd.show();
             return mRewardedVideoAd;

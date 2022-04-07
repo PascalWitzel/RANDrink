@@ -124,12 +124,6 @@ public class Aufgabe extends AppCompatActivity{
             d.addAufgabe(a);
         }
 
-        //Kategorie test
-        a.setKategorie("0");
-        a.setAufgabe("0");
-        d.addAufgabe(a);
-
-
     }
 }
 

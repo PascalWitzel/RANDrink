@@ -518,8 +518,6 @@ public class Einstellungen extends AppCompatActivity implements PurchasesUpdated
         }
     }
 
-
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
