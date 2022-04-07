@@ -254,10 +254,10 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
 
     @Override
     public void onPause() {
-        if (textspeech != null) {
-            textspeech.stop();
-            textspeech.shutdown();
-        }
+//        if (textspeech != null) {
+//            textspeech.stop();
+//            textspeech.shutdown();
+//        }
         ad.pause(this);
         super.onPause();
     }

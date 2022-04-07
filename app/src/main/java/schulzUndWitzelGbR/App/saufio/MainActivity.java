@@ -355,9 +355,11 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         if(sp.valueAt(i)==true){
             Log.i("HURE12",sb.toString());
             sb.append("'");
-            String s;
+            String s = "";
             try {
-                s = ((CheckedTextView) lv_kategorie.getChildAt(i)).getText().toString();
+                if(((CheckedTextView) lv_kategorie.getChildAt(i)) != null ) {
+                    s = ((CheckedTextView) lv_kategorie.getChildAt(i)).getText().toString();
+                }
             } finally {
                 //TODO Bug beheben, Kategorien
                 sb = sb.append("Sport");

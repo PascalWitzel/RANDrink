@@ -17,16 +17,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="schulzUndWitzelGbR.App.saufio.sucht"></activity>
-        <activity android:name="schulzUndWitzelGbR.App.saufio.Shop" />
-        <activity android:name="schulzUndWitzelGbR.App.saufio.Einstellungen" />
-        <activity android:name="schulzUndWitzelGbR.App.saufio.Credits" />
-        <activity android:name="schulzUndWitzelGbR.App.saufio.AC_bearbeiten" />
-        <activity android:name="schulzUndWitzelGbR.App.saufio.ac_aufgaben" />
-        <activity android:name="schulzUndWitzelGbR.App.saufio.Hauptspiel" />
+        <activity android:name="schulzUndWitzelGbR.App.saufio.sucht"
+            android:exported="false"
+            ></activity>
+        <activity android:name="schulzUndWitzelGbR.App.saufio.Shop"
+            android:exported="false"
+            />
+        <activity android:name="schulzUndWitzelGbR.App.saufio.Einstellungen"
+            android:exported="false"
+
+            />
+        <activity android:name="schulzUndWitzelGbR.App.saufio.Credits"
+            android:exported="false"
+
+            />
+        <activity android:name="schulzUndWitzelGbR.App.saufio.AC_bearbeiten"
+            android:exported="false"
+
+            />
+        <activity android:name="schulzUndWitzelGbR.App.saufio.ac_aufgaben"
+            android:exported="false"
+
+            />
+        <activity android:name="schulzUndWitzelGbR.App.saufio.Hauptspiel"
+            android:exported="false"
+
+            />
         <activity
             android:name="schulzUndWitzelGbR.App.saufio.MainActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
