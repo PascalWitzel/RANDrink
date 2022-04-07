@@ -160,7 +160,13 @@ public class Hauptspiel extends AppCompatActivity implements PurchasesUpdatedLis
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 Allgemein.setzteBoolean(getApplicationContext(), Allgemein.KEY_VIDEO);
+                if (isChecked) {
+                    videoanaus.setText(getApplicationContext().getString(R.string.switch_video_an));
+                } else {
+                    videoanaus.setText(getApplicationContext().getString(R.string.switch_video_aus));
+                }
             }
+
         });
         img_ende = (ImageView) findViewById(R.id.video_ende);
         Spieler = (ArrayList<String>) getIntent().getSerializableExtra("key");
