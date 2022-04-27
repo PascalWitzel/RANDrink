@@ -22,8 +22,8 @@
 
     <ImageButton
         android:id="@+id/btn_ton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="120dp"
         android:layout_marginRight="120dp"
@@ -36,7 +36,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.019"
         tools:ignore="OnClick" />
 
     <ImageButton
@@ -63,7 +63,7 @@
         android:text="@string/dark"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="36sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btn_sprache_save"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
         android:text="@string/switch_video_an"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="36sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/spin_sprache"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,8 +130,8 @@
 
     <Button
         android:id="@+id/btn_50"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
+        android:layout_width="124dp"
+        android:layout_height="65dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/pixil_button_main"
         android:onClick="btn_ladesammeln"
@@ -158,7 +158,7 @@
         android:textAlignment="center"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -177,7 +177,7 @@
         android:textAlignment="center"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_50" />

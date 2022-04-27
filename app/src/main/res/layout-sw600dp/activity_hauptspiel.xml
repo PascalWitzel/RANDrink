@@ -47,7 +47,7 @@
         android:text="TextView"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/img_background"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,8 +57,8 @@
 
     <Button
         android:id="@+id/btn_zufall"
-        android:layout_width="190dp"
-        android:layout_height="63dp"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
@@ -71,7 +71,7 @@
         android:text="@string/naechsterspieler"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="65sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -82,18 +82,18 @@
 
     <VideoView
         android:id="@+id/videoBB"
-        android:layout_width="487dp"
-        android:layout_height="281dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="408dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="20dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_spieleranzeige" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_kopfzahl" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="190dp"
-        android:layout_height="63dp"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="40dp"
@@ -109,7 +109,7 @@
         android:text="@string/spieleradd"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="65sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_zufall"
         app:layout_constraintHorizontal_bias="0.0"
@@ -119,9 +119,9 @@
 
     <TextView
         android:id="@+id/tv_aufgabe"
-        android:layout_width="314dp"
-        android:layout_height="207dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="369dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
         android:autoSizeMaxTextSize="100sp"
         android:autoSizeMinTextSize="12sp"
@@ -134,8 +134,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/img_background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoBB"
+        app:layout_constraintTop_toBottomOf="@+id/video_ende"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -148,7 +149,7 @@
         android:text="TextView"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,7 +180,7 @@
         android:layout_height="140dp"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="128dp"
         android:background="@drawable/pixil_button_hauptspiel"
         android:onClick="btnimg_kopf"
         android:scaleType="fitCenter"
@@ -187,7 +188,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/btn_zufall"
         app:layout_constraintEnd_toEndOf="@+id/img_background"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_spieleranzeige"
         app:layout_constraintVertical_bias="0.0" />
@@ -198,7 +199,7 @@
         android:layout_height="140dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="150dp"
         android:layout_marginRight="150dp"
         android:background="@drawable/pixil_button_hauptspiel"
@@ -207,7 +208,7 @@
         android:src="@drawable/pixel_zahl"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toEndOf="@+id/btn_kopf"
         app:layout_constraintTop_toBottomOf="@+id/tv_spieleranzeige" />
 
@@ -273,7 +274,7 @@
         android:text="TextView"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -291,7 +292,7 @@
         android:text="@string/switchvideo"
         android:textColor="?attr/primaryTitleColor"
         android:textColorHint="?attr/primaryTitleColor"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_spieleranzeige"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -301,13 +302,13 @@
 
     <ImageView
         android:id="@+id/video_ende"
-        android:layout_width="487dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="416dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="20dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_spieleranzeige"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kopfzahl"
         app:srcCompat="@drawable/pixel_muenze" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
