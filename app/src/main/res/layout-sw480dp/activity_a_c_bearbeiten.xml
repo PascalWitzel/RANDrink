@@ -46,8 +46,8 @@
 
     <EditText
         android:id="@+id/et_Aufgabe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="533dp"
+        android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="32dp"
@@ -96,6 +96,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_Aufgabe"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.284" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
