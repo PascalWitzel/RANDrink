@@ -360,13 +360,16 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             try {
                 if(((CheckedTextView) lv_kategorie.getChildAt(i)) != null ) {
                     s = ((CheckedTextView) lv_kategorie.getChildAt(i)).getText().toString();
+                    Log.i("HURE13",s.toString());
                 }
             } finally {
                 //TODO Bug beheben, Kategorien
                 //sb = sb.append("Sport");
+                Log.i("HURE14",sb.toString());
             }
 
                 sb = sb.append(s+"',");
+                Log.i("HURE15",sb.toString());
             }
         }
 
