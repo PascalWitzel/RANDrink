@@ -364,7 +364,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
                 }
             } finally {
                 //TODO Bug beheben, Kategorien
-                //sb = sb.append("Sport");
+                sb = sb.append("Sport");
                 Log.i("HURE14",sb.toString());
             }
 
