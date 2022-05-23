@@ -221,6 +221,8 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         });
         buttonton();
 
+
+
         //Kategorien anzeigen lassen
         initListViewKategorie();
         //todo Appname im String anpassen
@@ -348,37 +350,57 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
     }
 
     //Übergabe für next Activity
-    private String gebeKategorie(){
-    SparseBooleanArray sp = lv_kategorie.getCheckedItemPositions();
-    StringBuilder sb= new StringBuilder();
-    Log.i("HURE1",sb.toString());
-        for(int i=0;i<sp.size();i++){
-        if(sp.valueAt(i)==true){
-            Log.i("HURE12",sb.toString());
+    private String gebeKategorie() {
+        SparseBooleanArray sp = lv_kategorie.getCheckedItemPositions();
+        StringBuilder sb = new StringBuilder();
+        String bla="";
+        if (sp.valueAt(0) == true) {
+            if ((CheckedTextView) lv_kategorie.getChildAt(0)!=null) {
+                bla = ((CheckedTextView) lv_kategorie.getChildAt(0)).getText().toString();
+            }
             sb.append("'");
-            String s = "";
-            try {
-                if(((CheckedTextView) lv_kategorie.getChildAt(i)) != null ) {
-                    s = ((CheckedTextView) lv_kategorie.getChildAt(i)).getText().toString();
-                    Log.i("HURE13",s.toString());
-                }
-            } finally {
-                //TODO Bug beheben, Kategorien
-                sb = sb.append("Sport");
-                Log.i("HURE14",sb.toString());
-            }
-
-                sb = sb.append(s+"',");
-                Log.i("HURE15",sb.toString());
-            }
+            sb.append(bla);
+            sb.append("',");
+            bla="";
         }
 
-        if (sb.length()==0){
-            return "0";
+        if (sp.valueAt(1) == true) {
+            if ((CheckedTextView) lv_kategorie.getChildAt(1)!=null) {
+                bla = ((CheckedTextView) lv_kategorie.getChildAt(1)).getText().toString();
+            }
+            sb.append("'");
+            sb.append(bla);
+            sb.append("',");
+            bla="";
+
         }
-        else{
-            return sb.toString().substring(0, sb.length() - 1);
+
+        if (sp.valueAt(2) == true) {
+            if ((CheckedTextView) lv_kategorie.getChildAt(2)!=null) {
+                bla = ((CheckedTextView) lv_kategorie.getChildAt(2)).getText().toString();
+            }
+            sb.append("'");
+            sb.append(bla);
+            sb.append("',");
+            bla="";
+
         }
+
+        if (sp.valueAt(3) == true) {
+            if ((CheckedTextView) lv_kategorie.getChildAt(3)!=null) {
+                bla = "'"+((CheckedTextView) lv_kategorie.getChildAt(3)).getText().toString()+"',";
+            }
+            sb.append("'");
+            sb.append(bla);
+            sb.append("',");
+            bla="";
+
+        }
+        //bla=bla+"0'";
+        sb.append("'0'");
+        Log.i("Fotze",sb.toString());
+
+        return  sb.toString();
     }
 
     //setzte Ton
