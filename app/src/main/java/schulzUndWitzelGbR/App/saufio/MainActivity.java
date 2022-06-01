@@ -1,4 +1,4 @@
-package schulzUndWitzelGbR.App.saufio;
+package  schulzUndWitzelGbR.App.saufio;
 
 import com.android.billingclient.api.AcknowledgePurchaseParams;
 import com.android.billingclient.api.AcknowledgePurchaseResponseListener;
@@ -44,7 +44,6 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.saufio.R;
 
@@ -107,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
                 startActivity(new Intent(MainActivity.this, ac_aufgaben.class));
                 return true;
             //case R.id.Shop:
-              //  startActivity(new Intent(MainActivity.this, Shop.class));
+            //  startActivity(new Intent(MainActivity.this, Shop.class));
             case R.id.Sucht:
                 startActivity(new Intent(MainActivity.this, sucht.class));
             default:
@@ -215,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             @Override
             public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int pos, long id) {
                 List<String> aufgabeKategorie = db.aufgabeKategorie("'"+kategorie[pos]+"'");
-                    Allgemein.alertOK(c,kategorie[pos],kategroie[pos]+"\n\n"+getResources().getString(R.string.regeln_rundenzahl) +aufgabeKategorie.size(), getResources().getString(R.string.ok));
+                Allgemein.alertOK(c,kategorie[pos],kategroie[pos]+"\n\n"+getResources().getString(R.string.regeln_rundenzahl) +aufgabeKategorie.size(), getResources().getString(R.string.ok));
                 return true;
             }
         });
@@ -261,7 +260,12 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
 
     //Button zum Spiel
     public void btn_zumSpiel(View view) {
-        if (Spieler.size() >= 2) {
+        String s = gebeKategorie();//.substring(0,gebeKategorie().length()-1);
+        Log.i("HUREFOTZE1",s);
+        if (s.equals("'0'")) {
+            Allgemein.alertOK(this, getResources().getString(R.string.keineaufgabe_title), getResources().getString(R.string.keineaufgabe_message), getResources().getString(R.string.ok));
+        }
+        else if (Spieler.size() >= 2) {
             Intent i = new Intent(MainActivity.this, Hauptspiel.class);
             i.putExtra("key", Spieler);
             i.putExtra("key2", numberpicker);
@@ -277,15 +281,14 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
             } else{
                 rundeanzahlx = 2147483645;
             }
-        i.putExtra("key6",rundeanzahlx);
-            String s = gebeKategorie();//.substring(0,gebeKategorie().length()-1);
+            i.putExtra("key6",rundeanzahlx);
             Log.i("Kategorie",s);
             if (s !="0"){
                 i.putExtra("key3",s);
                 if(s.matches(".*"+getResources().getString(R.string.kategroie1)+"kw.*")){
                     //alertRegeln(i,this, getResources().getString(R.string.alter_kategorie_title1), getResources().getString(R.string.alter_kategorie_message1), getResources().getString(R.string.verstanden));
                 } else {
-                startActivity(i);
+                    startActivity(i);
                 }
             }
             else {
@@ -294,7 +297,12 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         }
         //wenn zu wenig Spieler
         else {
-            Allgemein.alertOK(this, getResources().getString(R.string.alter_spieler_title), getResources().getString(R.string.alter_spieler_message), getResources().getString(R.string.ok));
+            if (Spieler.size()<=1) {
+                Allgemein.alertOK(this, getResources().getString(R.string.alter_spieler_title), getResources().getString(R.string.alter_spieler_message), getResources().getString(R.string.ok));
+            }
+            else {
+                Allgemein.alertOK(this, getResources().getString(R.string.keineaufgabe_title), getResources().getString(R.string.keineaufgabe_message), getResources().getString(R.string.ok));
+            }
         }
     }
 
